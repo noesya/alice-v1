@@ -8,7 +8,7 @@ export default class Map extends Thing {
       height: 1536,
       srcWidth: 4096,
       srcHeight: 3072,
-      src: '/assets/images/map/map.jpg'
+      src: '/assets/images/map/map.png'
     })
   }
 }
