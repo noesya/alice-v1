@@ -18,7 +18,6 @@ export default class Hero extends Character {
         }
       }
     });
-    this.speed = 10;
     this.direction = 1;
     this.name = "hero"
 
@@ -28,36 +27,39 @@ export default class Hero extends Character {
   }
   listen() {
     window.addEventListener('keydown', e => {
-      let isMoving = false;
+      let isMoving = false,
+        x = 0,
+        y = 0;
+
       if (e.code === 'ArrowRight') {
-        this.move(this.speed, 0);
         this.flipY = false;
         isMoving = true;
+        x = 1;
       } else if (e.code === 'ArrowDown') {
-        this.move(0, this.speed);
         isMoving = true;
+        y = 1;
       } else if (e.code === 'ArrowLeft') {
-        this.move(-this.speed, 0);
         this.flipY = true;
         isMoving = true;
+        x = -1;
       } else if (e.code === 'ArrowUp') {
-        this.move(0, -this.speed);
         isMoving = true;
+        y = -1;
       }
 
       if (isMoving) {
         this.setAnimation("walk");
+        this.move(x, y);
       }
     });
 
     window.addEventListener('keyup', e => {
-      console.log(e)
       this.setAnimation("idle");
     });
+
+    this.move(this.speed, 0);
   }
   update() {
-    // game.ctx.translate(this.width, 0);
-    // game.ctx.scale(this.direction, 1);
     super.update();
   }
 }
