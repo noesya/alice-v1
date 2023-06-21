@@ -26,43 +26,6 @@ export default class Hero extends Character {
     this.setAnimation("idle");
 
   }
-  listen() {
-    window.addEventListener('keydown', e => {
-      let isMoving = false,
-        x = 0,
-        y = 0;
-
-      if (e.code === 'ArrowRight') {
-        this.flipY = false;
-        isMoving = true;
-        x = 1;
-      } else if (e.code === 'ArrowLeft') {
-        this.flipY = true;
-        isMoving = true;
-        x = -1;
-      }
-
-      if (e.code === 'ArrowDown') {
-        isMoving = true;
-        y = 1;
-      } else if (e.code === 'ArrowUp') {
-        isMoving = true;
-        y = -1;
-      }
-
-      this.move(x, y);
-
-      if (isMoving) {
-        this.setAnimation("walk");
-      }
-    });
-
-    window.addEventListener('keyup', e => {
-      this.setAnimation("idle");
-    });
-
-    this.move(this.speed, 0);
-  }
   update() {
     let x = 0, y = 0;
     if (this.controls.actions.left) {
@@ -80,6 +43,8 @@ export default class Hero extends Character {
     if (x || y) {
       this.move(x, y);
       this.setAnimation("walk");
+    } else {
+      this.setAnimation("idle");
     }
 
     super.update();
