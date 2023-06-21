@@ -1,3 +1,10 @@
+  @font-face
+    font-family: quote($name)
+    font-style: $style
+    font-weight: $weight
+    font-display: swap
+    src: $src
+
 @include font-face("Calvino Grande", Calvino-Grande-Regular, $exts:( eot woff2 woff))
 @include font-face("Calvino Grande", Calvino-Grande-Black, $weight: bold, $exts:( eot woff2 woff))
 @include font-face("Calvino Grande", Calvino-Grande-Monoline-Italic, $style: italic, $exts:( eot woff2 woff))
