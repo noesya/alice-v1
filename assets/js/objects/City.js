@@ -7,7 +7,7 @@ export default class City extends Thing {
     this.data = data;
     this.html = data.html;
     this.canCollide = true;
-    this.collideTimeoutDuration = 20000;
+    this.collideTimeoutDuration = 10000;
   }
   onCollide() {
     if (!this.canCollide) return;

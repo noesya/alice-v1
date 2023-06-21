@@ -34,6 +34,7 @@ export class Game {
     this.canvas.height = this.container.offsetHeight;
   }
   loop () {
+    this.ctx.clearRect(0, 0, this.width, this.height);
     this.scene.update();
     requestAnimationFrame(this.loop.bind(this));
   }
