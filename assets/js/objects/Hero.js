@@ -24,9 +24,8 @@ export default class Hero extends Character {
     this.name = "hero"
 
     this.setAnimation("idle");
-
   }
-  update() {
+  listenControls() {
     let x = 0, y = 0;
     if (this.controls.actions.left) {
       x = -1
@@ -46,7 +45,9 @@ export default class Hero extends Character {
     } else {
       this.setAnimation("idle");
     }
-
+  }
+  update() {
+    this.listenControls();
     super.update();
   }
 }
