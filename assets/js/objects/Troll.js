@@ -1,3 +1,4 @@
+import { TROLLS } from "js/data/trolls";
 import Character from "./Character"
 
 const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
@@ -20,6 +21,7 @@ export default class Troll extends Character {
         }
       }
     });
+    this.type = "troll";
     this.changeActionChance = 0.05;
     this.speed = 2;
     this.action = "idle";
@@ -27,7 +29,6 @@ export default class Troll extends Character {
   }
   updateMovment() {
     let x = 0, y = 0;
-
     if (Math.random() < this.changeActionChance) {
       this.action = ACTIONS[Math.round(Math.random() * (ACTIONS.length-1))]
     }
@@ -55,6 +56,10 @@ export default class Troll extends Character {
     } else {
       this.setAnimation("idle");
     }
+  }
+  onCollide() {
+    super.onCollide();
+    alert(TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))]);
   }
   update() {
     this.updateMovment();

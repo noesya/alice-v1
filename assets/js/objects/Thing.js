@@ -21,6 +21,7 @@ export default class Thing {
   }
 
   collides(thing) {
+    if (!this.canCollide) return;
     return (this.x + this.width > thing.x && this.x < thing.x + thing.width && thing.y + thing.height > this.y && thing.y < this.y + this.height);
   }
   update() {
