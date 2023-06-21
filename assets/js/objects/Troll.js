@@ -1,5 +1,6 @@
 import { TROLLS } from "js/data/trolls";
-import Character from "./Character"
+import Character from "./Character";
+import { popinTroll } from "./Popin";
 
 const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
 export default class Troll extends Character {

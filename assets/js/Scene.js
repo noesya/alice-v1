@@ -37,6 +37,11 @@ export default class Scene {
         troll.onCollide();
       }
     });
+    this.cities.forEach(city => {
+      if (city.collides(this.hero)) {
+        city.onCollide();
+      }
+    });
   }
   update() {
     this.map.update();
