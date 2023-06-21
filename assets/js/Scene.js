@@ -11,7 +11,7 @@ export default class Scene {
     this.hero = new Hero();
   }
   update() {
-    this.hero.update();
     this.map.update();
+    this.hero.update();
   }
 }
