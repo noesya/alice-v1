@@ -5,6 +5,7 @@
   "author": "Arnaud Levy <contact@arnaudlevy.com>",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0"
   }
 }
