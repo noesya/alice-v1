@@ -20,22 +20,39 @@ export default class Hero extends Character {
     this.speed = 10;
     this.name = "hero"
 
-    this.setAnimation("walk");
     this.setAnimation("idle");
-  
+
     this.listen()
   }
   listen() {
     window.addEventListener('keydown', e => {
+      let isMoving = false;
       if (e.code === 'ArrowRight') {
         this.move(this.speed, 0);
+        isMoving = true;
       } else if (e.code === 'ArrowDown') {
         this.move(0, this.speed);
+        isMoving = true;
       } else if (e.code === 'ArrowLeft') {
         this.move(-this.speed, 0);
+        isMoving = true;
       } else if (e.code === 'ArrowUp') {
         this.move(0, -this.speed);
+        isMoving = true;
       }
-    })
+
+      if (isMoving) {
+        this.setAnimation("walk");
+      }
+    });
+
+    window.addEventListener('keyup', e => {
+      this.setAnimation("idle");
+    });
+  }
+  update() {
+    super.update();
+
+
   }
 }
