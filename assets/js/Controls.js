@@ -40,5 +40,12 @@ export default class Controls {
         this.actions.up = false;
       }
     });
+
+    window.addEventListener('blur', e => {
+      this.actions.right = false;
+      this.actions.left = false;
+      this.actions.down = false;
+      this.actions.up = false;
+   }) 
   }
 }

@@ -1,4 +1,5 @@
-const TROLLS = {
+export const TROLLS = {
+    quantity: 3,
     images: [
         '/assets/images/charactershot/troll.png'
     ],
