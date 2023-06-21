@@ -51,6 +51,7 @@ export default class Hero extends Character {
     });
 
     window.addEventListener('keyup', e => {
+      console.log(e)
       this.setAnimation("idle");
     });
   }
