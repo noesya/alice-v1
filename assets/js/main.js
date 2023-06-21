@@ -1,19 +1,20 @@
 var alice = document.getElementsByClassName('alice')[0];
 var step = 10;
 
-
 function keyPressed(event) {
     event = event || window.event;
     if (event.keyCode == '38') { // up arrow
-        // console.log('up')
-        console.log(alice);
-        alice.style.top = alice.style.top - step;
+        move(alice, 0, -step);
     } else if (event.keyCode == '40') { // down arrow
-        alice.style.top = alice.style.top + step;
+        move(alice, 0, step);
     } else if (event.keyCode == '37') { // left arrow
-       alice.style.top = alice.style.left - step;
+        move(alice, -step, 0);
     } else if (event.keyCode == '39') { // right arrow
-        alice.style.top = alice.style.left + step;
+        move(alice, step, 0);
     }
+}
+function move(target, x, y) {
+    target.style.left = target.getBoundingClientRect().left + x + 'px';
+    target.style.top = target.getBoundingClientRect().top + y + 'px';
 }
 document.onkeydown = keyPressed;
