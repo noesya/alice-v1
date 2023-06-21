@@ -67,7 +67,7 @@ export const CITIES = [
         name: 'Libertaria',
         baseline: 'L’état est un échec et un danger',
         src: '/assets/images/cities/libertaria.png',
-        x: 1100,
+        x: 1400,
         y: 700,
         width: 150,
         height: 150,
