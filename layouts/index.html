@@ -9,11 +9,6 @@
 </head>
 <body>
   <main>
-
-    <div id="nav">
-      <a href="#home">Accueil</a>
-      <a href="#game">Jouer</a>
-    </div>
     <section id="home" class="screen">
       <h1>Alice au pays des cryptos</h1>
       <p class="subtitle">Une plongée sociologique, gratuite et duplicable</p>
@@ -27,8 +22,14 @@
       <a href="#game" class="button">Jouer</a>
     </section>
     <div class="screen game" id="game">
-      <div id="pop-in-troll"></div>
-      <div id="pop-in-city"></div>
+      <a class="button" href="#pop-in-troll">troll</a>
+      <div id="pop-in-troll" class="overlay">
+        <div class="pop-in-troll">
+          <p>Insulte</p>
+          <a class="close" href="#">&times;</a>
+        </div>
+      </div>
+      <!-- <div id="pop-in-city"></div> -->
     </div>
   </main>
   <footer></footer>
