@@ -14,6 +14,10 @@ export class Game {
       return console.warning('no game container found');
     }
 
+    this.camera = {
+      x: 0,
+      y: 0
+    }
   }
   setup() {
     this.canvas = document.createElement('canvas');
@@ -35,11 +39,14 @@ export class Game {
   }
   loop () {
     this.ctx.clearRect(0, 0, this.width, this.height);
-    this.scene.update();
     requestAnimationFrame(this.loop.bind(this));
+    this.scene.update();
+
+    this.camera.x = -this.scene.hero.x + this.width / 2;
+    this.camera.y = -this.scene.hero.y + this.height / 2;
   }
   drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh) {
-    this.ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh);
+    this.ctx.drawImage(image, sx, sy, sw, sh, dx + this.camera.x, dy + this.camera.y, dw, dh);
   }
 }
 
