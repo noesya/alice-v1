@@ -1,4 +1,5 @@
 import Thing from "./Thing";
+import { popinCity } from "./Popin";
 
 export default class City extends Thing {
   constructor(data) {
@@ -13,7 +14,7 @@ export default class City extends Thing {
     if (!this.canCollide) return;
     this.canCollide = false;
 
-    alert(this.data.name)
+    popinCity.show();
 
     setTimeout(() => {
       this.canCollide = true;
