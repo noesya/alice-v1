@@ -1,8 +1,10 @@
 import Controls from "js/Controls";
 import Character from "./Character"
 export default class Hero extends Character {
-  constructor() {
+  constructor({x = 0, y = 0}) {
     super({
+      x,
+      y,
       width: 100,
       height: 100,
       src: '/assets/images/characters/alice.png',
@@ -14,6 +16,10 @@ export default class Hero extends Character {
         walk: {
           steps: 6,
           y: 100
+        },
+        reversedWalk: {
+          steps: 6,
+          y: 200
         }
       }
     });
@@ -40,7 +46,7 @@ export default class Hero extends Character {
     }
     if (x || y) {
       this.move(x, y);
-      this.setAnimation("walk");
+      this.setAnimation(x > 0 ? "walk" : "reversedWalk");
     } else {
       this.setAnimation("idle");
     }

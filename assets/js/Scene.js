@@ -15,11 +15,13 @@ export default class Scene {
   }
   setup() {
     this.map = new Map();
-    this.hero = new Hero();
+    this.hero = new Hero({
+      x: WORLD.width / 4, // Pas compris pour "/4"
+      y: WORLD.height / 4
+    });
     CITIES.forEach(city => {
         this.cities.push(new City(city));
     });
-
     this.addTrolls();
   }
   addTrolls() {

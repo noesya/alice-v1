@@ -19,6 +19,10 @@ export default class Troll extends Character {
         walk: {
           steps: 6,
           y: 100
+        },
+        reversedWalk: {
+          steps: 6,
+          y: 200
         }
       }
     });
@@ -53,7 +57,7 @@ export default class Troll extends Character {
 
     if (x || y) {
       this.move(x, y);
-      this.setAnimation("walk");
+      this.setAnimation(x > 0 ? "walk" : "reversedWalk");
     } else {
       this.setAnimation("idle");
     }
