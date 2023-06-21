@@ -1,5 +1,6 @@
 import { TROLLS } from "js/data/trolls";
-import Character from "./Character"
+import Character from "./Character";
+import { popinTroll } from "./Popin";
 
 const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
@@ -60,9 +61,10 @@ export default class Troll extends Character {
   onCollide() {
     super.onCollide();
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    const popin = document.getElementById('pop-in-troll');
-    popin.classList.add("active");
-    popin.querySelector('p').innerHTML = slang;
+    popinTroll.show();
+    // const popin = document.getElementById('pop-in-troll');
+    // popin.classList.add("active");
+    popinTroll.element.querySelector('p').innerHTML = slang;
   }
   update() {
     this.updateMovment();
