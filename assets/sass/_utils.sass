@@ -23,3 +23,6 @@
     font-display: swap
     src: $src
 
+@function px2rem($size)
+    $remSize: $size / 16
+    @return #{$remSize}rem
