@@ -64,11 +64,13 @@ export default class Hero extends Character {
     this.move(this.speed, 0);
   }
   update() {
-    let x, y;
+    let x = 0, y = 0;
     if (this.controls.actions.left) {
       x = -1
+      this.flipY = true;
     } else if (this.controls.actions.right) {
       x = 1
+      this.flipY = false;
     }
     if (this.controls.actions.up) {
       y = -1
@@ -76,7 +78,6 @@ export default class Hero extends Character {
       y = 1
     }
     if (x || y) {
-      console.log(x, y)
       this.move(x, y);
       this.setAnimation("walk");
     }
