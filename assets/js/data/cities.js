@@ -18,7 +18,7 @@ export const CITIES = [
     {
         name: 'Crypto-university',
         baseline: 'Vous avez plus de 35 ans, vous ne pouvez pas comprendre',
-        src: '/assets/images/cities/kryptogarten.png',
+        src: '/assets/images/cities/crypto-university.png',
         x: 100,
         y: 200,
         width: 150,
@@ -50,7 +50,7 @@ export const CITIES = [
     {
         name: 'Eglise de la Sainte Crypto',
         baseline: 'C’est un faux problème',
-        src: '/assets/images/cities/kryptogarten.png',
+        src: '/assets/images/cities/eglise-sainte-crypto.png',
         x: 100,
         y: 500,
         width: 150,
@@ -67,7 +67,7 @@ export const CITIES = [
         name: 'Libertaria',
         baseline: 'L’état est un échec et un danger',
         src: '/assets/images/cities/libertaria.png',
-        x: 1100,
+        x: 1400,
         y: 700,
         width: 150,
         height: 150,
