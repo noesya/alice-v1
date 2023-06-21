@@ -17,6 +17,9 @@ export default class City extends Thing {
     popinCity.show();
 
     popinCity.element.querySelector('.subtitle').innerHTML = this.data.name;
+    popinCity.element.querySelector('.baseline').innerHTML = this.data.baseline;
+    popinCity.element.querySelector('.image').src = this.data.src;
+    popinCity.element.querySelector('.data').innerHTML = this.data.html;
 
     setTimeout(() => {
       this.canCollide = true;
