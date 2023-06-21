@@ -1,6 +1,6 @@
-import Sprite from "./Sprite";
+import Thing from "./Thing";
 
-export default class City extends Sprite {
+export default class City extends Thing {
   constructor(data) {
     super({
         x: data.x,

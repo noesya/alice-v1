@@ -23,10 +23,10 @@ export default class Scene {
   }
   update() {
     this.map.update();
-    this.hero.update();
-    this.trollTest.update();
     this.cities.forEach(city => {
         city.update();
     });
+    this.trollTest.update();
+    this.hero.update();
   }
 }
