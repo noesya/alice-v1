@@ -21,12 +21,13 @@ export default class Thing {
   }
 
   collides(thing) {
-    if (!this.canCollide) return;
+    if (!this.canCollide || !thing.canCollide) return;
     return (this.x + this.width > thing.x && this.x < thing.x + thing.width && thing.y + thing.height > this.y && thing.y < this.y + this.height);
   }
+
   update() {
     if (!this.ready) return;
     game.drawImage(this.image, 0, 0, this.srcWidth, this.srcHeight, this.x, this.y, this.width, this.height);
-
   }
+  
 }
