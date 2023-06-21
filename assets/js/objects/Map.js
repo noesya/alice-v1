@@ -6,8 +6,8 @@ export default class Map extends Thing {
     super({
       width: 2048,
       height: 1536,
-      src_width: 4096,
-      src_height: 3072,
+      srcWidth: 4096,
+      srcHeight: 3072,
       src: '/assets/images/map/map.jpg'
     })
   }
