@@ -50,7 +50,7 @@ export const CITIES = [
     {
         name: 'Eglise de la Sainte Crypto',
         baseline: 'C’est un faux problème',
-        src: '/assets/images/cities/kryptogarten.png',
+        src: '/assets/images/cities/eglise-sainte-crypto.png',
         x: 100,
         y: 500,
         width: 150,
