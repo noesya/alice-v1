@@ -14,7 +14,7 @@ export default class Hero extends Character {
         },
         walk: {
           steps: 6,
-          y: 100
+          y: 0
         }
       }
     });
@@ -31,15 +31,15 @@ export default class Hero extends Character {
       let isMoving = false;
       if (e.code === 'ArrowRight') {
         this.move(this.speed, 0);
-        this.direction = 1;
+        this.flipY = false;
         isMoving = true;
       } else if (e.code === 'ArrowDown') {
         this.move(0, this.speed);
         isMoving = true;
       } else if (e.code === 'ArrowLeft') {
         this.move(-this.speed, 0);
+        this.flipY = true;
         isMoving = true;
-        this.direction = -1;
       } else if (e.code === 'ArrowUp') {
         this.move(0, -this.speed);
         isMoving = true;
@@ -55,10 +55,8 @@ export default class Hero extends Character {
     });
   }
   update() {
-    // game.ctx.translate(width, 0);
-    // canvasContext.scale(-1, 1);
+    // game.ctx.translate(this.width, 0);
+    // game.ctx.scale(this.direction, 1);
     super.update();
-
-
   }
 }

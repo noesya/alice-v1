@@ -22,7 +22,8 @@ export default class Thing {
     return (this.x + this.width > thing.x && this.x < thing.x + thing.width && thing.y + thing.height > this.y && thing.y < this.y + this.height);
   }
   update() {
-    if (!this.ready) return;
+    if (!this.ready) return;   
     game.ctx.drawImage(this.image, 0, 0, this.width, this.height, this.x, this.y, this.width, this.height);
+
   }
 }
