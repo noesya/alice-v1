@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "repository": "git@github.com:noesya/alice.git",
   "author": "Arnaud Levy <contact@arnaudlevy.com>",
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "postcss-cli": "^10.1.0"
+  }
 }
