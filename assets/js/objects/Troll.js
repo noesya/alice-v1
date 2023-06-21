@@ -2,10 +2,10 @@ import Character from "./Character"
 
 const ACTIONS = ["idle","idle","idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
-  constructor() {
+  constructor({x = 0, y = 0}) {
     super({
-      x: 200,
-      y: 100,
+      x: x,
+      y: y,
       width: 100,
       height: 100,
       src: '/assets/images/characters/troll.png',
