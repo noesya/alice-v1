@@ -37,6 +37,9 @@ export class Game {
     this.scene.update();
     requestAnimationFrame(this.loop.bind(this));
   }
+  drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh) {
+    this.ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh);
+  }
 }
 
 export const game = new Game();

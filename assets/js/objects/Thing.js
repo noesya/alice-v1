@@ -26,7 +26,7 @@ export default class Thing {
   }
   update() {
     if (!this.ready) return;
-    game.ctx.drawImage(this.image, 0, 0, this.srcWidth, this.srcHeight, this.x, this.y, this.width, this.height);
+    game.drawImage(this.image, 0, 0, this.srcWidth, this.srcHeight, this.x, this.y, this.width, this.height);
 
   }
 }
