@@ -27,8 +27,12 @@ export class Game {
     this.resize();
     this.listen();
 
+    // const font = new FontFace("Calvino", "/assets/fonts/Calvino-Grande-Black.woff2");
+    // font.load().then(() => {
     this.scene = new Scene(this);
     this.loop();
+    // });
+
   }
   listen() {
     window.addEventListener('resize', this.resize.bind(this));
@@ -49,7 +53,6 @@ export class Game {
     this.ctx.drawImage(image, sx, sy, sw, sh, dx + this.camera.x, dy + this.camera.y, dw, dh);
   }
   drawText(text, x, y) {
-    console.log(text)
     this.ctx.font = '22px Calvino';
     this.ctx.textAlign = "center";
     this.ctx.fillText(text, x + this.camera.x, y + this.camera.y);
