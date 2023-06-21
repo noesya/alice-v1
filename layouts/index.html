@@ -1,7 +1,17 @@
-{{ partial "header.html" . }}
-
-<main>
-  hello
-</main>
-
-{{ partial "footer.html" . }}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Title }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial "css.html" }}
+</head>
+<body>
+  <main>
+    hello
+  </main>
+  <footer></footer>
+  {{ partial "js.html" }}
+</body>
+</html>
