@@ -39,8 +39,8 @@ export const CITIES = [
         y: 400,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Ne dérangez pas les mineurs ! Un autre argument pour refuser les critiques consiste à dire que les évolutions technologiques sont inéluctables. C’est donc totalement inutile d’en discuter ou de lutter contre, ça revient à tenter de stopper la marche du temps. Les personnes critiques sont assimilées à des conservateurs obscurantistes, en comparant les cryptos à l’invention de l’imprimerie, ou tout simplement à des ringards imbéciles.", },
             { tag:'blockquote', value: "Votre ignorance condamne l'industrie crypto comme d'autres ont condamné internet à privilégier le Minitel" },
@@ -55,8 +55,8 @@ export const CITIES = [
         y: 500,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Entrez, entrez, fidèles cryptobros ! Soyez les bienvenus dans ce lieu de foi véritable. Car la seule voie lumineuse, la bonne voie, l’orthodoxie non fongible, c’est évidemment que tout va bien : un océan d’opportunités technologiques, avec certes quelques petites optimisations à faire, mais rien de grave. Nous ne sommes plus ni dans le domaine de la science qui cherche la connaissance, ni dans celui de la technique qui cherche l’efficacité : nous sommes bel et bien dans le domaine de la foi.", },
             { tag:'blockquote', value: "Il n'y a aucun malfaiteur qui blanchit en Crypto ça n'a aucun sens de suspecter tout le monde pour rien…" },
@@ -71,8 +71,8 @@ export const CITIES = [
         y: 700,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Bienvenue à Libertaria, le pays qui a résolu le problème de l'État. Car l'État, ça ne marche pas, c’est corrompu, inefficace, dangereux. C’est prouvé, il y a plein de problèmes sur Internet ! À Libertaria, on a donc supprimé l'État. Chacun fait ce qu’il veut, et tout va pour le mieux dans le meilleur des mondes.", },
             { tag:'blockquote', value: "J'ai mis une grande partie de mes économies dans les cryptos pour que ma fille de 4 ans puisse un jour pouvoir vivre dignement. Je ne veux pas qu'elle soit l'esclave de l'état." },
@@ -87,8 +87,8 @@ export const CITIES = [
         y: 600,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Attention, vous entrez dans un espace à l’hygiène douteuse. Le dôme du tonnerre, tout près de Libertaria, est un espace d’intense détestation. L’Europe y est la cause de tous les maux, et mérite de disparaître dans d'atroces souffrances, entraînant avec elle ses états corrompus et sa monnaie maléfique, l’Euro.", },
             { tag:'blockquote', value: "Bitcoin servira d'étalon que vous le vouliez ou pas... Vivement que votre euro s'écroule !" },
@@ -103,8 +103,8 @@ export const CITIES = [
         y: 500,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "À Self-made city, on combat pour la liberté. La liberté fondamentale d’acheter des crypto-actifs qui s’écroulent. La liberté essentielle d’acquérir des NFTs de singes. La liberté absolue d’adorer les cryptos. La liberté inaliénable de refuser la régulation légale. La Liberté, la grande, avec un L majuscule, celle qui a permis la merveilleuse civilisation humaniste et durable dans laquelle nous vivons.", },
             { tag:'blockquote', value: "Cessez de nous protéger, de faire notre bien malgré nous" },
@@ -119,8 +119,8 @@ export const CITIES = [
         y: 600,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Bienvenue chez Bankochain, la seule banque qui vous rend riche ! Car les crypto-monnaies, ça monte, ça monte, et tout le monde en profite. Les petites notes à la fin du smart-contract ? Non, ce n’est rien du tout, ayez confiance. On m’informe à l’instant que le cours du Bitcoin vient encore de perdre 50%, profitez-en c’est une opportunité extraordinaire !", },
             { tag:'blockquote', value: "Les pauvres ont trouvé un moyen de faire du fric sans nous, il faut vite taxer et arrêter ça" },
@@ -135,8 +135,8 @@ export const CITIES = [
         y: 300,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "Le Mordor Club est un concept révolutionnaire : un club de musculation réservé aux hommes, aux vrais, les cryptobros. C’est aussi un haut lieu de socialisation, permettant de se gausser ensemble de tout ce qui n’est pas crypto, et de jouir entre frères de la technophilie crypto phallique. On y fanfaronne en montrant ses tweets d’insultes, de menaces et d’agressions, souvent sexuelles. On se souvient avec émotion des raids orchestrés contre les hérétiques, les incroyants, les sorcières anti-cryptos.", },
             { tag:'blockquote', value: "Sinon les rêgles elle peut les rouler et se les insérer dans le fion?" },
@@ -151,8 +151,8 @@ export const CITIES = [
         y: 700,
         width: 150,
         height: 150,
-        src_width: 1024,
-        src_height: 1024,
+        srcWidth: 1024,
+        srcHeight: 1024,
         data: [
             { tag: 'p', value: "FTX, Terra et Luna, Celsius, 3 Arrows Capital, c’est ici que l’on commémore les morts au front. Parce qu’il ne faudrait pas croire que la cryptolife est un long fleuve tranquille ! Il y a des hauts, très hauts, aussi hauts qu’une immense pyramide de Ponzi, et des bas, très bas, comme une faillite.", },
             { tag:'blockquote', value: "Qui aurait pu prédire la crise cryptographique ?" }

@@ -13,10 +13,11 @@ export default class Thing {
 
     if (this.src) {
       this.image = new Image();
-      this.image.addEventListener('load', () => {
-        this.ready = true
-      });
       this.image.src = this.src;
+      // this.image.addEventListener('load', () => {
+      //   this.ready = true
+      // });
+      this.ready = true
     }
   }
 

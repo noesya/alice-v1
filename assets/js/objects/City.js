@@ -8,13 +8,15 @@ export default class City extends Thing {
     this.data = data;
     this.html = data.html;
     this.canCollide = true;
-    this.collideTimeoutDuration = 20000;
+    this.collideTimeoutDuration = 2000;
   }
   onCollide() {
     if (!this.canCollide) return;
     this.canCollide = false;
 
     popinCity.show();
+
+    popinCity.element.querySelector('.subtitle').innerHTML = this.data.name;
 
     setTimeout(() => {
       this.canCollide = true;
