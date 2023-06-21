@@ -62,14 +62,15 @@ export default class Troll extends Character {
     }
   }
   speak() {
-    game.drawText(this.slang, this.x - this.width/2, this.y - this.height);
+    game.drawText(this.slang, this.x + this.width/2, this.y - this.height/2);
   }
   onCollide() {
     super.onCollide();
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    // popinTroll.show();
-    // popinTroll.element.querySelector('p').innerHTML = slang;
     this.slang = slang;
+    setTimeout(() => {
+      this.slang = null
+    }, 3000);
   }
   update() {
     this.updateMovment();

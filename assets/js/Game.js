@@ -50,7 +50,8 @@ export class Game {
   }
   drawText(text, x, y) {
     console.log(text)
-    this.ctx.font = "18px Calvino";
+    this.ctx.font = '22px Calvino';
+    this.ctx.textAlign = "center";
     this.ctx.fillText(text, x + this.camera.x, y + this.camera.y);
   }
 }
