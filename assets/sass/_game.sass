@@ -36,7 +36,6 @@
     color: #FFFFFF
 
 #pop-in-city
-  scroll-behavior: auto
   position: absolute
   display: block
   color: white
@@ -49,6 +48,8 @@
   display: none
   &.active
     display: block
+    overflow-y: scroll
+    scroll-behavior: auto
   .subtitle
     color: #FF4E07
     font-size: px2rem(50)
@@ -62,3 +63,9 @@
     font-weight: bold
     text-decoration: none
     color: #000000
+  .image
+    width: 500px
+  .baseline 
+    color: #000
+  .data
+    color: #000
