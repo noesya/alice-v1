@@ -17,7 +17,6 @@ export default class Scene {
     this.trollTest = new Troll();
     this.hero.x = this.map.width / 2;
     this.hero.y = this.map.height / 2;
-
     CITIES.forEach(city => {
         this.cities.push(new City(city));
     });
@@ -26,5 +25,8 @@ export default class Scene {
     this.map.update();
     this.hero.update();
     this.trollTest.update();
+    this.cities.forEach(city => {
+        city.update();
+    });
   }
 }
