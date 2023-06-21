@@ -14,7 +14,7 @@ export default class Hero extends Character {
         },
         walk: {
           steps: 6,
-          y: 0
+          y: 100
         }
       }
     });
