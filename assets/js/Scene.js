@@ -35,11 +35,13 @@ export default class Scene {
     this.trolls.forEach(troll => {
       if (troll.collides(this.hero)) {
         troll.onCollide();
+        this.hero.onCollide();
       }
     });
     this.cities.forEach(city => {
       if (city.collides(this.hero)) {
         city.onCollide();
+        this.hero.onCollide();
       }
     });
   }
