@@ -5,8 +5,8 @@ import { WORLD } from "../data/WORLD";
 export default class Map extends Thing {
   constructor() {
     super({
-      width: 2048,
-      height: 1536,
+      width: WORLD.width/2,
+      height: WORLD.height/2,
       srcWidth: WORLD.width,
       srcHeight: WORLD.height,
       src: '/assets/images/map/map.png'
