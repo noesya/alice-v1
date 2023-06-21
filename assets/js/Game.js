@@ -48,6 +48,11 @@ export class Game {
   drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh) {
     this.ctx.drawImage(image, sx, sy, sw, sh, dx + this.camera.x, dy + this.camera.y, dw, dh);
   }
+  drawText(text, x, y) {
+    console.log(text)
+    this.ctx.font = "18px Calvino";
+    this.ctx.fillText(text, x + this.camera.x, y + this.camera.y);
+  }
 }
 
 export const game = new Game();

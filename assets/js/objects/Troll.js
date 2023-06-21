@@ -1,6 +1,6 @@
 import { TROLLS } from "js/data/trolls";
 import Character from "./Character";
-import { popinTroll } from "./Popin";
+import { game } from "js/Game";
 
 const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
@@ -30,6 +30,7 @@ export default class Troll extends Character {
     this.changeActionChance = 0.05;
     this.speed = 2;
     this.action = "idle";
+    this.slang = "";
     this.setAnimation("idle");
   }
   updateMovment() {
@@ -44,14 +45,12 @@ export default class Troll extends Character {
         break;
       case "right":
         x = 1;
-        this.flipY = false;
         break;
       case "down":
         y = 1;
         break;
       case "left":
         x = -1;
-        this.flipY = true;
         break;
     }
 
@@ -62,14 +61,19 @@ export default class Troll extends Character {
       this.setAnimation("idle");
     }
   }
+  speak() {
+    game.drawText(this.slang, this.x - this.width/2, this.y - this.height);
+  }
   onCollide() {
     super.onCollide();
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    popinTroll.show();
-    popinTroll.element.querySelector('p').innerHTML = slang;
+    // popinTroll.show();
+    // popinTroll.element.querySelector('p').innerHTML = slang;
+    this.slang = slang;
   }
   update() {
     this.updateMovment();
     super.update();
+    if (this.slang) this.speak(this.slang);
   }
 }
