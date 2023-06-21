@@ -59,7 +59,8 @@ export default class Troll extends Character {
   }
   onCollide() {
     super.onCollide();
-    alert(TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))]);
+    const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))]
+    alert(slang);
   }
   update() {
     this.updateMovment();
