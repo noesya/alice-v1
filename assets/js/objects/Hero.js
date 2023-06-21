@@ -1,7 +1,5 @@
-import { game } from "js/Game";
 import Controls from "js/Controls";
 import Character from "./Character"
-
 export default class Hero extends Character {
   constructor() {
     super({
@@ -19,6 +17,7 @@ export default class Hero extends Character {
         }
       }
     });
+    this.type = "hero";
     this.speed = 3;
     this.controls = new Controls();
     this.direction = 1;

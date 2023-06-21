@@ -7,8 +7,8 @@ export default class City extends Thing {
         y: data.y,
         width: data.width,
         height: data.height,
-        src_width: data.src_width,
-        src_height: data.src_height,
+        srWidth: data.srcWidth,
+        srcHeight: data.srcHeight,
         src: data.src
     });
     this.data = data;

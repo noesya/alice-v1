@@ -16,8 +16,6 @@ export default class Scene {
   setup() {
     this.map = new Map();
     this.hero = new Hero();
-    this.hero.x = this.map.width / 2;
-    this.hero.y = this.map.height / 2;
     CITIES.forEach(city => {
         this.cities.push(new City(city));
     });
@@ -28,10 +26,17 @@ export default class Scene {
     let i = 0;
     for (i = 0; i < TROLLS.quantity; i += 1) {
       this.trolls.push(new Troll({
-        x: Math.round(WORLD.width  / 2 * Math.random()),
-        y: Math.round(WORLD.height  / 2 * Math.random())
+        x: Math.round(WORLD.width  / 3 * Math.random()),
+        y: Math.round(WORLD.height  / 3 * Math.random())
       }));
     }
+  }
+  checkCollision() {
+    this.trolls.forEach(troll => {
+      if (troll.collides(this.hero)) {
+        troll.onCollide();
+      }
+    });
   }
   update() {
     this.map.update();
@@ -42,5 +47,7 @@ export default class Scene {
       troll.update();
     });
     this.hero.update();
+
+    this.checkCollision();
   }
 }
