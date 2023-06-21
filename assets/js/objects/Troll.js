@@ -20,7 +20,7 @@ export default class Troll extends Character {
         }
       }
     });
-    this.changeActionChance = 0.1;
+    this.changeActionChance = 0.05;
     this.speed = 2;
     this.action = "idle";
     this.setAnimation("idle");
