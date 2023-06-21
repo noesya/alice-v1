@@ -1,3 +1,4 @@
+import { game } from "js/Game";
 import Character from "./Character"
 
 export default class Hero extends Character {
@@ -18,6 +19,7 @@ export default class Hero extends Character {
       }
     });
     this.speed = 10;
+    this.direction = 1;
     this.name = "hero"
 
     this.setAnimation("idle");
@@ -29,6 +31,7 @@ export default class Hero extends Character {
       let isMoving = false;
       if (e.code === 'ArrowRight') {
         this.move(this.speed, 0);
+        this.direction = 1;
         isMoving = true;
       } else if (e.code === 'ArrowDown') {
         this.move(0, this.speed);
@@ -36,6 +39,7 @@ export default class Hero extends Character {
       } else if (e.code === 'ArrowLeft') {
         this.move(-this.speed, 0);
         isMoving = true;
+        this.direction = -1;
       } else if (e.code === 'ArrowUp') {
         this.move(0, -this.speed);
         isMoving = true;
@@ -51,6 +55,8 @@ export default class Hero extends Character {
     });
   }
   update() {
+    // game.ctx.translate(width, 0);
+    // canvasContext.scale(-1, 1);
     super.update();
 
 
