@@ -4,14 +4,15 @@ class Popin {
     constructor(id) {
         this.element = document.getElementById(id);
         this.close = this.element.querySelector('.close'); 
+        this.close.addEventListener('click', this.hide.bind(this));
     }
 
     show() {
-        this.classList.add("active");
+        this.element.classList.add("active");
     }
     
     hide() {
-        this.classList.remove("active");
+        this.element.classList.remove("active");
     }
 }
 
