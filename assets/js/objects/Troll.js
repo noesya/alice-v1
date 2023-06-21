@@ -1,5 +1,6 @@
 import Character from "./Character"
 
+const ACTIONS = ["idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
   constructor() {
     super({
@@ -19,11 +20,47 @@ export default class Troll extends Character {
         }
       }
     });
-    this.direction = 1;
+    this.changeActionChance = 0.1;
+    this.speed = 2;
+    this.action = "idle";
     this.setAnimation("idle");
   }
+  updateMovment() {
+    let x = 0, y = 0;
+
+    if (Math.random() < this.changeActionChance) {
+      this.action = ACTIONS[Math.round(Math.random() * (ACTIONS.length-1))]
+      console.log(this.action)
+    }
+
+    switch(this.action) {
+      case "idle":
+        break;
+      case "up":
+        y = -1
+        break;
+      case "right":
+          x = 1
+          this.flipY = true;
+        break;
+      case "down":
+        y = 1
+        break;
+      case "left":
+        x = 1
+        this.flipY = false;
+        break;
+    }
+
+    if (x || y) {
+      this.move(x, y);
+      this.setAnimation("walk");
+    } else {
+      this.setAnimation("idle");
+    }
+  }
   update() {
-    this.move(Math.random() - 0.5, Math.random() - 0.5)
+    this.updateMovment();
     super.update();
   }
 }
