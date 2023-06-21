@@ -1,4 +1,4 @@
-const TROLLS = {
+export const TROLLS = {
     images: [
         '/assets/images/charactershot/troll.png'
     ],
