@@ -5,10 +5,17 @@ export default class Hero extends Character {
     super({
       width: 30,
       height: 42,
-      src: '/assets/images/characters/alice/alice-character.png'
+      src: '/assets/images/characters/alice/alice-character.png',
+      animations: {
+        walk: {
+          steps: 5,
+          y: 0
+        }
+      }
     })
-    this.name = "hero"
-    console.log(this)
 
+    this.name = "hero"
+
+    this.setAnimation("walk")
   }
 }

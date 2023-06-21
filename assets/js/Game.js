@@ -14,18 +14,17 @@ export class Game {
       return console.warning('no game container found');
     }
 
-    this.setup();
-    this.loop();
   }
   setup() {
     this.canvas = document.createElement('canvas');
-    this.context = this.canvas.getContext('2d');
+    this.ctx = this.canvas.getContext('2d');
     this.container.appendChild(this.canvas);
 
     this.resize();
     this.listen();
 
     this.scene = new Scene(this);
+    this.loop();
   }
   listen() {
     window.addEventListener('resize', this.resize.bind(this));
