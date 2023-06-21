@@ -8,7 +8,8 @@ export default class Hero extends Character {
       src: '/assets/images/characters/alice/alice-character.png',
       animations: {
         walk: {
-          steps: 5
+          steps: 5,
+          y: 0
         }
       }
     })
