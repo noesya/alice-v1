@@ -1,6 +1,6 @@
 import Character from "./Character"
 
-const ACTIONS = ["idle", "left", "right", "up", "down"];
+const ACTIONS = ["idle","idle","idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
   constructor() {
     super({
@@ -30,25 +30,22 @@ export default class Troll extends Character {
 
     if (Math.random() < this.changeActionChance) {
       this.action = ACTIONS[Math.round(Math.random() * (ACTIONS.length-1))]
-      console.log(this.action)
     }
 
     switch(this.action) {
-      case "idle":
-        break;
       case "up":
-        y = -1
+        y = -1;
         break;
       case "right":
-          x = 1
-          this.flipY = true;
+        x = 1;
+        this.flipY = false;
         break;
       case "down":
-        y = 1
+        y = 1;
         break;
       case "left":
-        x = 1
-        this.flipY = false;
+        x = -1;
+        this.flipY = true;
         break;
     }
 
