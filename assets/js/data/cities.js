@@ -18,7 +18,7 @@ export const CITIES = [
     {
         name: 'Crypto-university',
         baseline: 'Vous avez plus de 35 ans, vous ne pouvez pas comprendre',
-        src: '/assets/images/cities/kryptogarten.png',
+        src: '/assets/images/cities/crypto-university.png',
         x: 100,
         y: 200,
         width: 150,
