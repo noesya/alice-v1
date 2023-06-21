@@ -3,8 +3,8 @@ import Character from "./Character"
 export default class Troll extends Character {
   constructor() {
     super({
-      x: 50,
-      y: 50,
+      x: 200,
+      y: 100,
       width: 100,
       height: 100,
       src: '/assets/images/characters/troll.png',
