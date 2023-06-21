@@ -14,7 +14,9 @@ function keyPressed(event) {
     }
 }
 function move(target, x, y) {
-    target.style.left = target.getBoundingClientRect().left + x + 'px';
-    target.style.top = target.getBoundingClientRect().top + y + 'px';
+    var left = target.getBoundingClientRect().left + x,
+        top = target.getBoundingClientRect().top + y;
+    target.style.left = left + 'px';
+    target.style.top = top + 'px';
 }
 document.onkeydown = keyPressed;
