@@ -1,6 +1,6 @@
 import Character from "./Character"
 
-const ACTIONS = ["idle","idle","idle", "left", "right", "up", "down"];
+const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
   constructor({x = 0, y = 0}) {
     super({
