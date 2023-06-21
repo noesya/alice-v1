@@ -1,11 +1,13 @@
 import { game } from "js/Game";
 
 export default class Thing {
-  constructor({x, y, width, height, src = null}) {
+  constructor({x, y, width, height, src_width, src_height, src = null}) {
     this.x = x || 0;
     this.y = y || 0;
     this.width = width;
     this.height = height;
+    this.src_width = src_width;
+    this.src_height = src_height;
     this.src = src;
     this.ready = this.src ? true : false;
 
@@ -23,7 +25,7 @@ export default class Thing {
   }
   update() {
     if (!this.ready) return;
-    game.ctx.drawImage(this.image, 0, 0, this.width, this.height, this.x, this.y, this.width, this.height);
+    game.ctx.drawImage(this.image, 0, 0, this.src_width, this.src_height, this.x, this.y, this.width, this.height);
 
   }
 }
