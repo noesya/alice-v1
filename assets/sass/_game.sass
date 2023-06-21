@@ -1,0 +1,21 @@
+#game
+    &:target
+        display: block
+    .alice
+        position: absolute
+        z-index: 1
+        display: block
+        width: 159px
+        height: 263px
+        background: url('/assets/images/characters/alice/sprites.png') -10px -10px
+        animation: play 0.8s steps(4) infinite
+    .map
+        position: absolute
+        background-image: url('/assets/images/map/map.jpg')
+        background-size: 100%
+        height: 100%
+        width: 100%
+
+@keyframes play
+    100%
+        background-position: -726px
