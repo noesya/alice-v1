@@ -1,4 +1,5 @@
 import { game } from "js/Game";
+import Controls from "js/Controls";
 import Character from "./Character"
 
 export default class Hero extends Character {
@@ -18,48 +19,34 @@ export default class Hero extends Character {
         }
       }
     });
+    this.controls = new Controls();
     this.direction = 1;
-    this.name = "hero"
 
     this.setAnimation("idle");
-
-    this.listen()
   }
-  listen() {
-    window.addEventListener('keydown', e => {
-      let isMoving = false,
-        x = 0,
-        y = 0;
-
-      if (e.code === 'ArrowRight') {
-        this.flipY = false;
-        isMoving = true;
-        x = 1;
-      } else if (e.code === 'ArrowDown') {
-        isMoving = true;
-        y = 1;
-      } else if (e.code === 'ArrowLeft') {
-        this.flipY = true;
-        isMoving = true;
-        x = -1;
-      } else if (e.code === 'ArrowUp') {
-        isMoving = true;
-        y = -1;
-      }
-
-      if (isMoving) {
-        this.setAnimation("walk");
-        this.move(x, y);
-      }
-    });
-
-    window.addEventListener('keyup', e => {
+  listenControls() {
+    let x = 0, y = 0;
+    if (this.controls.actions.left) {
+      x = -1
+      this.flipY = true;
+    } else if (this.controls.actions.right) {
+      x = 1
+      this.flipY = false;
+    }
+    if (this.controls.actions.up) {
+      y = -1
+    } else if (this.controls.actions.down) {
+      y = 1
+    }
+    if (x || y) {
+      this.move(x, y);
+      this.setAnimation("walk");
+    } else {
       this.setAnimation("idle");
-    });
-
-    this.move(this.speed, 0);
+    }
   }
   update() {
+    this.listenControls();
     super.update();
   }
 }

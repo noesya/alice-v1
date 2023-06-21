@@ -22,7 +22,7 @@ export default class Sprite extends Thing {
   update() {
     if (!this.currentAnimation || !this.ready) return;
   
-    this.tick += 1 / 15;
+    this.tick += 1 / 5;
     const i = Math.round(this.tick) % this.animation.steps;
 
     if (this.flipY) {
