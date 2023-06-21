@@ -5,9 +5,13 @@ export default class Thing {
     this.width = width;
     this.height = height;
     this.src = src;
+    this.ready = this.src ? true : false;
 
     if (this.src) {
       this.image = new Image();
+      this.image.addEventListener('load', () => {
+        this.ready = true
+      });
       this.image.src = this.src;
     }
   }
