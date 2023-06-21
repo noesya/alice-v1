@@ -25,13 +25,13 @@ export default class Sprite extends Thing {
     this.tick += 1 / 5;
     const i = Math.round(this.tick) % this.animation.steps;
 
-    if (this.flipY) {
-      game.ctx.save();
-      game.ctx.scale(-1, 1);
-      game.drawImage(this.image, this.width * (i + 1), this.animation.y, -this.width, this.height, -this.x + this.width/2, this.y, -this.width, this.height);
-      game.ctx.restore();
-    } else {
+    // if (this.flipY) {
+    //   game.ctx.save();
+    //   game.ctx.scale(-1, 1);
+    //   game.drawImage(this.image, this.width * (i + 1), this.animation.y, -this.width, this.height, -this.x + this.width/2, this.y, -this.width, this.height);
+    //   game.ctx.restore();
+    // } else {
       game.drawImage(this.image, this.width * i, this.animation.y, this.width, this.height, this.x, this.y, this.width, this.height);
-    }
+    // }
   }
 }
