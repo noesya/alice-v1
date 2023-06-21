@@ -1,3 +1,5 @@
+body
+    background: #FFEDE9
 #nav
     position: absolute
     top: 0
@@ -15,12 +17,14 @@ h1
     font-weight: bold
     text-align: center
     font-family: "Calvino", serif
+    @media (max-width : 600px)
+        font-size: px2rem(50)
 
 p
     font-size: px2rem(22)
     line-height: px2rem(36)
     font-family: "Calvino", serif
-    max-width: 700px
+    max-width: 680px
     margin: 100px auto
 
 .subtitle
@@ -29,7 +33,10 @@ p
     text-align: center
     font-family: "Calvino", serif
     max-width: none
-    margin: 30px 
+    margin: 30px
+    line-height: 120%
+    @media (max-width : 600px)
+        font-size: px2rem(40)
 
 .button
     position: absolute
