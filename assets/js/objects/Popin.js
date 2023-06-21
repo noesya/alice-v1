@@ -1,9 +1,9 @@
 import { game } from "js/Game";
 
-export default class Popin {
+class Popin {
     constructor(id) {
         this.element = document.getElementById(id);
-        this.close = this.element.querySelector('.close')[0]; 
+        this.close = this.element.querySelector('.close'); 
     }
 
     show() {
@@ -14,3 +14,6 @@ export default class Popin {
         this.classList.remove("active");
     }
 }
+
+export const popinTroll = new Popin('pop-in-troll');
+export const popinCity = new Popin('pop-in-city');
