@@ -21,7 +21,6 @@ export default class Hero extends Character {
     });
     this.controls = new Controls();
     this.direction = 1;
-    this.name = "hero"
 
     this.setAnimation("idle");
   }
