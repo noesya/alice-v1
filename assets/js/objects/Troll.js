@@ -3,6 +3,8 @@ import Character from "./Character"
 export default class Troll extends Character {
   constructor() {
     super({
+      x: 50,
+      y: 50,
       width: 100,
       height: 100,
       src: '/assets/images/characters/troll.png',
@@ -19,5 +21,9 @@ export default class Troll extends Character {
     });
     this.direction = 1;
     this.setAnimation("idle");
+  }
+  update() {
+    this.move(Math.random() - 0.5, Math.random() - 0.5)
+    super.update();
   }
 }
