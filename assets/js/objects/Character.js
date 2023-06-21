@@ -3,7 +3,7 @@ import Sprite from "./Sprite";
 export default class Character extends Sprite {
   constructor(parameters) {
     super(parameters)
-    this.speed = 15;
+    this.speed = 10;
     //TEST
 
 
