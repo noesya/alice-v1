@@ -3,7 +3,7 @@ var step = 10;
 
 function keyPressed(event) {
     event = event || window.event;
-    if (event.keyCode == '38') { // up arrow
+    if (event.keyCode == '38') {        // up arrow
         move(alice, 0, -step);
     } else if (event.keyCode == '40') { // down arrow
         move(alice, 0, step);
