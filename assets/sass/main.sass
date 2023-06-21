@@ -1,6 +1,7 @@
 .game
     .alice
         position: absolute
+        z-index: 1
         display: block
         width: 159px
         height: 263px
@@ -9,6 +10,9 @@
     .map
         position: absolute
         background: url('/assets/images/map/map.jpg')
+        height: 100%
+        width: 100%
+        object-fit: cover
 
 @keyframes play
     100%
