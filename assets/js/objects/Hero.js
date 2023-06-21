@@ -4,9 +4,9 @@ import Character from "./Character"
 export default class Hero extends Character {
   constructor() {
     super({
-      width: 30,
-      height: 42,
-      src: '/assets/images/characters/alice/alice-character.png',
+      width: 60,
+      height: 84,
+      src: '/assets/images/characters/alice.png',
       animations: {
         idle: {
           steps: 4,
