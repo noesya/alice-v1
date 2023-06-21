@@ -19,7 +19,7 @@ export default class Sprite extends Thing {
   update() {
     if (!this.currentAnimation || !this.ready) return;
   
-    this.tick += 1 / 15;
+    this.tick += 1 / 10;
     const i = Math.round(this.tick) % this.animation.steps;
 
     game.ctx.drawImage(this.image, this.width * i, this.animation.y, this.width, this.height, this.x, this.y, this.width, this.height);
