@@ -16,5 +16,4 @@ class Popin {
     }
 }
 
-export const popinTroll = new Popin('pop-in-troll');
 export const popinCity = new Popin('pop-in-city');
