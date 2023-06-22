@@ -15,22 +15,21 @@ export default class City extends Thing {
     this.data = data;
     this.html = data.html;
     this.canCollide = true;
-    this.collideTimeoutDuration = 2000;
+    this.collideTimeoutDuration = 5000;
     this.isCollided = true;
   }
   onCollide() {
-    // if (!this.canCollide) return;
-    // this.canCollide = false;
     this.isCollided = true;
 
-    console.log('contact with city')
+    if (!this.canCollide) return;
+
+    this.canCollide = false;
 
     popinCity.show();
-
-    // popinCity.element.querySelector('.subtitle').innerHTML = this.data.name;
-    // popinCity.element.querySelector('.baseline').innerHTML = this.data.baseline;
-    // popinCity.element.querySelector('.image').src = this.data.src;
-    // popinCity.element.querySelector('.data').innerHTML = this.data.html;
+    popinCity.element.querySelector('.subtitle').innerHTML = this.data.name;
+    popinCity.element.querySelector('.baseline').innerHTML = this.data.baseline;
+    popinCity.element.querySelector('.image').src = this.data.src;
+    popinCity.element.querySelector('.data').innerHTML = this.data.html;
 
     setTimeout(() => {
       this.canCollide = true;
