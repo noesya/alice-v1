@@ -13,13 +13,17 @@
   padding: 50px
   display: none
   inset: 30px
+  font-size: 22px
+  font-weight: normal
   &.active
     display: block
     overflow-y: scroll
-    scroll-behavior: auto
+    scroll-behavior: smooth
   .subtitle
     color: #FF4E07
     font-size: px2rem(50)
+  .baseline
+    font-size: 22px
   .close 
     cursor: pointer
     position: fixed
@@ -34,6 +38,11 @@
     font-size: px2rem(30)
     font-weight: bold
     text-decoration: none
+  blockquote
+    font-style: italic
+    font-size: 32px
+  p
+    font-weight: normal
   .image
     width: 500px
   @include media-breakpoint-up($md)
