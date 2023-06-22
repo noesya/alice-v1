@@ -31,7 +31,15 @@ export default class Sprite extends Thing {
     //   game.drawImage(this.image, this.width * (i + 1), this.animation.y, -this.width, this.height, -this.x + this.width/2, this.y, -this.width, this.height);
     //   game.ctx.restore();
     // } else {
-      game.drawImage(this.image, this.width * i, this.animation.y, this.width, this.height, this.x, this.y, this.width, this.height);
+      game.drawImage(this.image, 
+        this.width * i, 
+        this.animation.y, 
+        this.width, 
+        this.height, 
+        this.x - this.width / 2, 
+        this.y - this.height / 2, 
+        this.width, 
+        this.height);
     // }
   }
 }

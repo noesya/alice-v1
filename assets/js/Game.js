@@ -27,11 +27,12 @@ export class Game {
     this.resize();
     this.listen();
 
-    // const font = new FontFace("Calvino", "/assets/fonts/Calvino-Grande-Black.woff2");
-    // font.load().then(() => {
-    this.scene = new Scene(this);
-    this.loop();
-    // });
+    const fontFace = new FontFace("Calvino", "url(/assets/fonts/Calvino-Grande-Black.woff2)");
+    fontFace.load().then((font) => {
+      document.fonts.add(font);
+      this.scene = new Scene(this);
+      this.loop();
+    });
 
   }
   listen() {

@@ -62,7 +62,7 @@ export default class Troll extends Character {
     }
   }
   speak() {
-    game.drawText(this.slang, this.x + this.width/2, this.y - this.height/2);
+    game.drawText(this.slang, this.x, this.y - this.height/2);
   }
   onCollide() {
     super.onCollide();
