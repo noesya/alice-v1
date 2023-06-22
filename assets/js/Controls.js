@@ -9,6 +9,7 @@ export default class Controls {
     };
 
     this.bindKeyboard();
+    this.bindButtons();
   }
   bindKeyboard() {
     window.addEventListener('keydown', e => {
@@ -46,6 +47,19 @@ export default class Controls {
       this.actions.left = false;
       this.actions.down = false;
       this.actions.up = false;
-   }) 
+    });
+  }
+  bindButtons() {
+    const buttons = document.querySelectorAll('.game-controls button');
+    buttons.forEach(button => {
+      button.addEventListener('pointerdown', (e) => {
+        const action = button.getAttribute('data-action');
+        this.actions[action] = true;
+      })
+      button.addEventListener('pointerup', (e) => {
+        const action = button.getAttribute('data-action');
+        this.actions[action] = false;
+      })
+    })
   }
 }
