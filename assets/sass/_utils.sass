@@ -1,3 +1,10 @@
+// Breakpoints
+$sm: 576px
+$md: 768px
+$lg: 992px
+$xl: 1200px
+$xxl: 1440px
+
 // https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 @function str-replace($string, $search, $replace: "")
 	$index: str-index($string, $search)
@@ -26,3 +33,7 @@
 @function px2rem($size)
     $remSize: $size / 16
     @return #{$remSize}rem
+
+@mixin media-breakpoint-up($breakpoint)
+  @media screen and (min-width: $breakpoint)
+    @content

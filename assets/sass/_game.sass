@@ -9,15 +9,10 @@
 #pop-in-city
   position: absolute
   display: block
-  color: white
   background-color: #E9FAFF
-  max-width: 600px
-  width: 60%
-  top: 0
-  bottom: 0
-  right: 0
   padding: 50px
   display: none
+  inset: 30px
   &.active
     display: block
     overflow-y: scroll
@@ -39,10 +34,13 @@
     font-size: px2rem(30)
     font-weight: bold
     text-decoration: none
-    color: #000000
   .image
     width: 500px
-  .baseline 
-    color: #000
-  .data
-    color: #000
+  @include media-breakpoint-up($md)
+    max-width: 600px
+    width: 60%
+    top: 0
+    bottom: 0
+    left: auto
+    right: 0
+  
