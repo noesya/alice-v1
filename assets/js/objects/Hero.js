@@ -27,6 +27,7 @@ export default class Hero extends Character {
     this.speed = 3;
     this.controls = new Controls();
     this.direction = 1;
+    this.collideTimeoutDuration = 1000;
 
     this.setAnimation("idle");
   }

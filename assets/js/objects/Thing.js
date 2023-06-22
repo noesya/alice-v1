@@ -1,15 +1,21 @@
 import { game } from "js/Game";
 
 export default class Thing {
-  constructor({x, y, width, height, srcWidth, srcHeight, src = null}) {
+  constructor({x, y, width, height, srcWidth, srcHeight, hitbox = null, src = null}) {
     this.x = x || 0;
     this.y = y || 0;
     this.width = width;
     this.height = height;
     this.srcWidth = srcWidth;
     this.srcHeight = srcHeight;
+    this.hitbox = hitbox || { width, height, x: 0, y: 0 };
     this.src = src;
     this.ready = this.src ? true : false;
+
+    this.center = {
+      x: this.x - this.width / 2,
+      y: this.y - this.height / 2
+    }
 
     if (this.src) {
       this.image = new Image();
@@ -23,7 +29,7 @@ export default class Thing {
 
   collides(thing) {
     if (!this.canCollide || !thing.canCollide) return;
-    return (this.x + this.width > thing.x && this.x < thing.x + thing.width && thing.y + thing.height > this.y && thing.y < this.y + this.height);
+    return (this.x + this.hitbox.x + this.hitbox.width > thing.x + thing.hitbox.x && this.x + this.hitbox.x < thing.x + thing.hitbox.x + thing.hitbox.width && thing.y + thing.hitbox.x + thing.hitbox.height > this.y + this.hitbox.y && thing.y + thing.hitbox.y < this.y + this.hitbox.height + this.hitbox.y);
   }
 
   update() {

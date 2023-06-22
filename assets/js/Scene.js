@@ -42,7 +42,7 @@ export default class Scene {
     this.cities.forEach(city => {
       if (city.collides(this.hero)) {
         city.onCollide();
-        this.hero.onCollide();
+        // this.hero.onCollide();
       }
     });
   }
