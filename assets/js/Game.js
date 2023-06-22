@@ -27,7 +27,7 @@ export class Game {
     this.resize();
     this.listen();
 
-    const fontFace = new FontFace("Calvino", "url(/assets/fonts/Calvino-Grande-Black.woff2)");
+    const fontFace = new FontFace("Calvino", "url(/assets/fonts/Calvino-Regular.woff2)");
     fontFace.load().then((font) => {
       document.fonts.add(font);
       this.scene = new Scene(this);
