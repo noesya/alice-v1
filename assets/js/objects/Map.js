@@ -1,6 +1,6 @@
 import { game } from "js/Game";
 import Thing from "./Thing";
-import { WORLD } from "../data/WORLD";
+import { WORLD } from "../data/world";
 
 export default class Map extends Thing {
   constructor() {
