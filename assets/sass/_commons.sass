@@ -5,7 +5,7 @@ body
 
 .screen
     position: relative
-    height: 100vh
+    min-height: 100vh
     &:not(:target)
         display: none
 
@@ -21,11 +21,14 @@ h1
 
 p
     font-size: px2rem(22)
-    line-height: px2rem(36)
+    line-height: 160%
     font-family: "Calvino", serif
     max-width: 680px
     margin: 100px auto
     font-weight: normal
+    &.credits
+        font-size: px2rem(18)
+
 
 .subtitle
     font-size: px2rem(42)
