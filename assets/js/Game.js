@@ -27,13 +27,8 @@ export class Game {
     this.resize();
     this.listen();
 
-    const fontFace = new FontFace("Calvino", "url(/assets/fonts/Calvino-Regular.woff2)");
-    fontFace.load().then((font) => {
-      document.fonts.add(font);
-      this.scene = new Scene(this);
-      this.loop();
-    });
-
+    this.scene = new Scene(this);
+    this.loop();
   }
   listen() {
     window.addEventListener('resize', this.resize.bind(this));

@@ -1,6 +1,13 @@
 import { game } from "js/Game";
 
 export default class Thing {
+
+  get projectedPosition () {
+    return {
+      x : this.x + game.camera.x,
+      y : this.y + game.camera.y
+    }
+  }
   constructor({x, y, width, height, srcWidth, srcHeight, hitbox = null, src = null}) {
     this.x = x || 0;
     this.y = y || 0;

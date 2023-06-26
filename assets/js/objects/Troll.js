@@ -32,7 +32,10 @@ export default class Troll extends Character {
     this.changeActionChance = 0.05;
     this.speed = 2;
     this.action = "idle";
+
+    this.isSpeaking = false;
     this.slang = "";
+
     this.setAnimation("idle");
   }
   updateMovment() {
@@ -63,20 +66,21 @@ export default class Troll extends Character {
       this.setAnimation("idle");
     }
   }
-  speak(text) {
-    game.drawText(text, this.x, this.y - this.height/2);
-  }
   onCollide() {
     super.onCollide();
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    this.slang = slang;
-    setTimeout(() => {
-      this.slang = null
-    }, 3000);
+    this.speak(slang);
+
+    setTimeout(() => this.stopSpeaking(), 3000);
   }
   update() {
-    this.updateMovment();
+    if (this.isSpeaking) {
+      this.updateDialog();
+      this.action = "idle";
+    } else {
+      this.updateMovment();
+    }
+
     super.update();
-    if (this.slang) this.speak(this.slang);
   }
 }

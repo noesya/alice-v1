@@ -11,6 +11,7 @@ export default class Scene {
     this.game = game;
     this.cities = [];
     this.trolls = [];
+    this.elementsToUpdate = [];
     this.setup();
   }
   setup() {
@@ -23,6 +24,8 @@ export default class Scene {
         this.cities.push(new City(city));
     });
     this.addTrolls();
+
+    this.elements = [...this.cities, ...this.trolls, this.hero]
   }
   addTrolls() {
     let i = 0;
@@ -49,13 +52,8 @@ export default class Scene {
   }
   update() {
     this.map.update();
-    this.cities.forEach(city => {
-        city.update();
-    });
-    this.trolls.forEach(troll => {
-      troll.update();
-    });
-    this.hero.update();
+    this.elements.sort((a, b) => a.y - b.y)
+    this.elements.forEach(element => element.update());
 
     this.checkCollision();
   }
