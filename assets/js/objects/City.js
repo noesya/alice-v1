@@ -28,7 +28,7 @@ export default class City extends SpeakingThing {
   }
 
   openPopin() {
-    popinCity.show(data);
+    popinCity.show(this.data);
   }
 
   update() {
