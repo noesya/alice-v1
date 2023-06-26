@@ -8,10 +8,10 @@ export default class Troll extends Character {
     super({
       x: x,
       y: y,
-      width: 256,
-      height: 300,
+      width: 128,
+      height: 150,
       srcWidth: 256,
-      srcWidth: 300,
+      srcHeight: 300,
       src: src,
       animations: {
         idle: {
