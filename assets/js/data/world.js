@@ -3,7 +3,7 @@ export const WORLD = {
   height: 2229,
   area: {
     left: 100,
-    top: 250,
+    top: 60,
     right: 1800,
     bottom: 900
   }
