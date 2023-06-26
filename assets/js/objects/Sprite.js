@@ -1,7 +1,8 @@
 import { game } from "js/Game";
 import Thing from "./Thing";
+import SpeakingThing from "./SpeakingThing";
 
-export default class Sprite extends Thing {
+export default class Sprite extends SpeakingThing {
   get animation () {
     return this.animations[this.currentAnimation]
   }

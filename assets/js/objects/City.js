@@ -1,8 +1,9 @@
 import Thing from "./Thing";
 import { popinCity } from "./Popin";
 import { game } from "js/Game";
+import SpeakingThing from "./SpeakingThing";
 
-export default class City extends Thing {
+export default class City extends SpeakingThing {
   constructor(data) {
     data.hitbox = {
       width: 50,
@@ -17,33 +18,29 @@ export default class City extends Thing {
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
     this.isCollided = true;
+
+    this.dialog.classList.add('game-dialog--action');
+    this.dialog.addEventListener('click', () => this.openPopin());
   }
   onCollide() {
     this.isCollided = true;
-
-    if (!this.canCollide) return;
-
-    this.canCollide = false;
-
-    popinCity.show();
-    popinCity.element.querySelector('.subtitle').innerHTML = this.data.name;
-    popinCity.element.querySelector('.baseline').innerHTML = this.data.baseline;
-    popinCity.element.querySelector('.image').src = this.data.src;
-    popinCity.element.querySelector('.data').innerHTML = this.data.html;
-
-    setTimeout(() => {
-      this.canCollide = true;
-    }, this.collideTimeoutDuration);
+    this.speak("Entrer dans la ville")
   }
-  speak(text) {
-    game.drawText(text, this.x + this.width / 2, this.y);
+
+  openPopin() {
+    popinCity.show(data);
   }
+
   update() {
     super.update();
-    
+
     if (this.isCollided) {
       this.speak("Entrer dans la ville")
+      this.updateDialog();
+    } else {
+      this.stopSpeaking();
     }
+
     this.isCollided = false;
   }
 }
