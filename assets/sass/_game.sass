@@ -73,6 +73,11 @@
       margin-bottom: 0
   .image
     width: 500px
+  @include media-breakpoint-down($md)
+    display: none
+    &.active
+      display: block
+
   @include media-breakpoint-up($md)
     max-width: 600px
     width: 60%
@@ -123,12 +128,16 @@
     color: black
     cursor: pointer
     margin-left: 0
+    transform: translate(25%, -100%)
     &::after
       display: none
 
 body.is-popin-opened
   .game-dialog
     display: none !important
-  #game
-    canvas
-      transform: translateX(-300px)
+  @include media-breakpoint-up($md)
+    #game
+      canvas
+        transform: translateX(-300px)
+
+  

@@ -37,3 +37,7 @@ $xxl: 1440px
 @mixin media-breakpoint-up($breakpoint)
   @media screen and (min-width: $breakpoint)
     @content
+
+@mixin media-breakpoint-down($breakpoint)
+  @media screen and (max-width: $breakpoint)
+    @content
