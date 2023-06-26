@@ -4,7 +4,7 @@ import { game } from "js/Game";
 
 const ACTIONS = ["idle", "idle", "idle", "left", "right", "up", "down"];
 export default class Troll extends Character {
-  constructor({x = 0, y = 0}) {
+  constructor({x = 0, y = 0, src = null}) {
     super({
       x: x,
       y: y,
@@ -12,7 +12,7 @@ export default class Troll extends Character {
       height: 300,
       srcWidth: 256,
       srcWidth: 300,
-      src: '/assets/images/characters/troll-1.png',
+      src: src,
       animations: {
         idle: {
           steps: 8,

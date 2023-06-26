@@ -26,12 +26,13 @@ export default class Scene {
   }
   addTrolls() {
     let i = 0;
-    for (i = 0; i < TROLLS.quantity; i += 1) {
+    TROLLS.images.forEach(src => {
       this.trolls.push(new Troll({
         x: Math.round(WORLD.width  / 3 * Math.random()),
-        y: Math.round(WORLD.height  / 3 * Math.random())
+        y: Math.round(WORLD.height  / 3 * Math.random()),
+        src: src
       }));
-    }
+    })
   }
   checkCollision() {
     this.trolls.forEach(troll => {
