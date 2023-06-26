@@ -1,3 +1,4 @@
+import { WORLD } from "js/data/world";
 import Sprite from "./Sprite";
 
 export default class Character extends Sprite {
@@ -11,8 +12,12 @@ export default class Character extends Sprite {
     //TEST
   }
   move(x, y) {
+    const { area } = WORLD
     this.x += x * this.speed;
     this.y += y * this.speed;
+
+    this.x = Math.max(area.left, Math.min(this.x, area.right));
+    this.y = Math.max(area.top, Math.min(this.y, area.bottom));
   }
   onCollide() {
     this.canCollide = false;
