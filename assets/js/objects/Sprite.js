@@ -12,6 +12,7 @@ export default class Sprite extends Thing {
     this.data = parameters.data;
     this.animations = parameters.animations;
     this.currentAnimation = null;
+    console.log(this)
   }
   setAnimation(animationName) {
     if (this.currentAnimation === animationName) return;
@@ -22,24 +23,17 @@ export default class Sprite extends Thing {
   update() {
     if (!this.currentAnimation || !this.ready) return;
   
-    this.tick += 1 / 5;
+    this.tick += 1 / 8;
     const i = Math.round(this.tick) % this.animation.steps;
 
-    // if (this.flipY) {
-    //   game.ctx.save();
-    //   game.ctx.scale(-1, 1);
-    //   game.drawImage(this.image, this.width * (i + 1), this.animation.y, -this.width, this.height, -this.x + this.width/2, this.y, -this.width, this.height);
-    //   game.ctx.restore();
-    // } else {
-      game.drawImage(this.image, 
-        this.width * i, 
-        this.animation.y, 
-        this.width, 
-        this.height, 
-        this.x, 
-        this.y, 
-        this.width, 
-        this.height);
-    // }
+    game.drawImage(this.image, 
+      this.srcWidth * i, 
+      this.animation.y, 
+      this.srcWidth, 
+      this.srcHeight, 
+      this.x, 
+      this.y, 
+      this.width, 
+      this.height);
   }
 }

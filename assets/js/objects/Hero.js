@@ -5,10 +5,10 @@ export default class Hero extends Character {
     super({
       x,
       y,
-      width: 256,
-      height: 300,
+      width: 128,
+      height: 150,
       srcWidth: 256,
-      srcWidth: 300,
+      srcHeight: 300,
       src: '/assets/images/characters/alice.png',
       animations: {
         idle: {
