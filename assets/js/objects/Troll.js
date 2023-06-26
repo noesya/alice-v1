@@ -86,12 +86,14 @@ export default class Troll extends Character {
     }, 3000);
   }
   update() {
-    this.updateMovment();
-    super.update();
-
     if (this.isSpeaking) {
       this.dialog.style.left = this.projectedPosition.x + "px";
       this.dialog.style.top = this.projectedPosition.y + "px";
+      this.action = "idle";
+    } else {
+      this.updateMovment();
     }
+
+    super.update();
   }
 }
