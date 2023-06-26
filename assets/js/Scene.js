@@ -31,8 +31,8 @@ export default class Scene {
     let i = 0;
     TROLLS.images.forEach(src => {
       this.trolls.push(new Troll({
-        x: Math.round(WORLD.width  / 3 * Math.random()),
-        y: Math.round(WORLD.height  / 3 * Math.random()),
+        x: Math.round(WORLD.width * Math.random()),
+        y: Math.round(WORLD.height * Math.random()),
         src: src
       }));
     })

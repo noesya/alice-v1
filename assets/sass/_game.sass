@@ -1,25 +1,32 @@
+.game-container
+  position: fixed
+  inset: 0
+
 #game
   display: block
   position: fixed
   inset: 0
+  z-index: 1
   &:not(:target)
     opacity: 0
     pointer-events: none
+  canvas, #pop-in-city
+    transition: 0.5s transform
 
 #pop-in-city
   position: absolute
   display: block
   background-color: #E9FAFF
   padding: 50px
-  display: none
   inset: 30px
   font-size: 22px
   font-weight: normal
   z-index: 5
+  overflow-y: scroll
+  scroll-behavior: smooth
+
   &.active
     display: block
-    overflow-y: scroll
-    scroll-behavior: smooth
   .subtitle
     color: #FF4E07
     font-size: px2rem(50)
@@ -64,7 +71,6 @@
       font-size: 100px
       font-style: italic
       margin-bottom: 0
-
   .image
     width: 500px
   @include media-breakpoint-up($md)
@@ -74,7 +80,10 @@
     bottom: 0
     left: auto
     right: 0
-  
+    transform: translateX(100%)
+    &.active
+      transform: translateX(0)
+
 
 .game-controls
   position: fixed
@@ -86,6 +95,7 @@
 
 .game-dialog
   position: fixed
+  display: none
   z-index: 2
   top: 0
   left: 0
@@ -114,3 +124,8 @@
     margin-left: 0
     &::after
       display: none
+
+body.is-popin-opened
+  #game
+    canvas
+      transform: translateX(-300px)

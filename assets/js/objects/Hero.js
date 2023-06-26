@@ -13,7 +13,8 @@ export default class Hero extends Character {
       animations: {
         idle: {
           steps: 8,
-          y: 0
+          y: 0,
+          framesPerTick: 18
         },
         walk: {
           steps: 8,

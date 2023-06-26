@@ -13,7 +13,6 @@ export default class Sprite extends SpeakingThing {
     this.data = parameters.data;
     this.animations = parameters.animations;
     this.currentAnimation = null;
-    console.log(this)
   }
   setAnimation(animationName) {
     if (this.currentAnimation === animationName) return;
@@ -24,7 +23,7 @@ export default class Sprite extends SpeakingThing {
   update() {
     if (!this.currentAnimation || !this.ready) return;
   
-    this.tick += 1 / 8;
+    this.tick += 1 / (this.animation.framesPerTick || 8);
     const i = Math.round(this.tick) % this.animation.steps;
 
     game.drawImage(this.image, 

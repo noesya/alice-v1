@@ -1,5 +1,3 @@
-import { game } from "js/Game";
-
 class Popin {
     constructor(id) {
         this.element = document.getElementById(id);
@@ -14,10 +12,12 @@ class Popin {
 
         this.element.classList.add("active");
         this.element.scrollTo(0, 0);
+        document.body.classList.add("is-popin-opened");
     }
     
     hide() {
         this.element.classList.remove("active");
+        document.body.classList.remove("is-popin-opened");
     }
 }
 
