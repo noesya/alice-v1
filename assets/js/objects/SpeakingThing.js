@@ -23,7 +23,7 @@ export default class SpeakingThing extends Thing {
     this.isSpeaking = false;
   }
   updateDialog() {
-    this.dialog.style.left = this.projectedPosition.x + "px";
+    this.dialog.style.left = (this.projectedPosition.x - 80) + "px";
     this.dialog.style.top = this.projectedPosition.y + "px";
   }
 }

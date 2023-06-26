@@ -94,18 +94,20 @@
     padding: 15px
 
 .game-dialog
-  position: fixed
-  display: none
-  z-index: 2
-  top: 0
-  left: 0
-  text-align: center
   background: black
   color: white
-  padding: 20px
+  display: none
+  font-size: px2rem(20)
+  font-weight: bold
+  left: 0
+  line-height: 130%
   margin-left: 65px
-  transform: translateY(-100%)
   max-width: 300px
+  padding: 10px 20px 12px
+  position: fixed
+  top: 0
+  transform: translateY(-100%)
+  z-index: 2
   &::after
     content: ''
     width: 0
@@ -115,7 +117,7 @@
     border-color: black transparent transparent transparent
     position: absolute
     top: 100%
-    left: 0
+    left: 100px
   &--action
     background: white
     color: black
