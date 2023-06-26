@@ -5,11 +5,20 @@
   <title>{{ .Title }} - {{ .Site.Title }}</title>
   <meta name="description" content="{{ .Title }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/ico" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+
   {{ partial "css.html" }}
 </head>
 <body>
   <main>
     <section id="home" class="screen">
+      <img src="/assets/images/alice.png" alt="Alice">
       <h1>Alice au pays des cryptos</h1>
       <p class="subtitle">Une plongée sociologique, gratuite et duplicable</p>
       <p>
@@ -17,13 +26,14 @@
         Afin de guider les visiteurs et les curieux, 
         Etienne Mineur (<a href="https://volumique.com" target="_blank">Volumique</a>) et 
         Arnaud Levy (<a href="https://www.noesya.coop" target="_blank">noesya</a>) proposent un voyage critique parmi ses lieux communs, ses îlots stéréotypés et ses montagnes technologiques. 
-        Ce vademecum virtuel est illustré d’images créées par une intelligence artificielle, avec l’outil Midjourney.
+        Attention, malgré sa grande mignonitude, cette petite expérience n'est pas du tout pour les enfants (#cookiejar).
       </p>
       <a href="#game" class="button">Jouer</a>
 
       <p class="credits">
         Cette expérience interactive a été conçue par Etienne et Arnaud.
         La direction artistique et la production graphique sont l'œuvre d'Etienne, avec l'aide de Perrine Joly.
+        Les images ont été créées avec l’outil Midjourney.
         Le code JavaScript a été écrit par Alexis Benoit et l'intégration HTML a été faite par Cléo Laffargue.
         Les textes sont d'Arnaud Levy, à l'exception des phrases des crypto-trolls, qui sont toutes de vraies phrases, collectées sur Twitter et LinkedIn.
         Respect et gratitude à Aurore Lalucq, qui a subi ces insultes lamentables en travaillant pour l'intérêt général.
