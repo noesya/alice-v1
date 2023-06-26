@@ -22,7 +22,7 @@ export default class Hero extends Character {
         },
         reversedWalk: {
           steps: 8,
-          y: 300
+          y: 600
         }
       }
     });

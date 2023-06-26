@@ -30,12 +30,12 @@
   .subtitle
     color: $orange
     font-size: px2rem(50)
-    text-align: left
-    margin-left: 0
-  .baseline
-    font-size: 22px
     font-weight: bold
-    margin: px2rem(30) 0 0 0
+    font-style: normal
+  .baseline
+    font-size: px2rem(32)
+    font-style: italic
+    margin: px2rem(30) 0
   p
     margin-top: 30px
   .close 
@@ -47,32 +47,30 @@
     height: 40px
     border: 1px solid #000
     border-radius: 50%
-    text-align: center
     transition: all 200ms
     font-size: px2rem(30)
-    font-weight: bold
     text-decoration: none
+    text-align: center
   blockquote
     position: relative
     font-style: italic
-    font-size: 32px
-    margin: px2rem(62) 0 px2rem(95) 0
-    &::after
-      position: absolute
-      content: " ” "
-      font-size: 100px
-      font-style: italic
-      left: 0
-      margin-top: 50px
+    font-size: px2rem(32)
+    margin: px2rem(50) 0 px2rem(20) 0
+    &::after,
     &::before
-      content: " “ "
-      position: absolute
-      margin-top: px2rem(-70)
-      font-size: 100px
+      position: relative
+      font-size: px2rem(80)
       font-style: italic
-      margin-bottom: 0
+      display: block
+      line-height: px2rem(80)
+    &::after,
+      content: "”"
+    &::before
+      content: "“"
+      margin-bottom: px2rem(-45)
   .image
     width: 500px
+
   @include media-breakpoint-down($md)
     display: none
     &.active
