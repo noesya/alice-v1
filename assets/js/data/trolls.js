@@ -1,7 +1,11 @@
 export const TROLLS = {
     quantity: 3,
     images: [
-        '/assets/images/charactershot/troll.png'
+        '/assets/images/charactershot/troll-1.png',
+        '/assets/images/charactershot/troll-2.png',
+        '/assets/images/charactershot/troll-3.png',
+        '/assets/images/charactershot/troll-4.png',
+        '/assets/images/charactershot/troll-5.png'
     ],
     slangs: [
         'Restez pauvres bandes de fils de putes',

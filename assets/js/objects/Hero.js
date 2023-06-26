@@ -5,21 +5,23 @@ export default class Hero extends Character {
     super({
       x,
       y,
-      width: 100,
-      height: 100,
+      width: 256,
+      height: 300,
+      srcWidth: 256,
+      srcWidth: 300,
       src: '/assets/images/characters/alice.png',
       animations: {
         idle: {
-          steps: 6,
+          steps: 8,
           y: 0
         },
         walk: {
-          steps: 6,
-          y: 100
+          steps: 8,
+          y: 300
         },
         reversedWalk: {
-          steps: 6,
-          y: 200
+          steps: 8,
+          y: 300
         }
       }
     });

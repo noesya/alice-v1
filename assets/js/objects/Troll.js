@@ -8,21 +8,23 @@ export default class Troll extends Character {
     super({
       x: x,
       y: y,
-      width: 100,
-      height: 100,
-      src: '/assets/images/characters/troll.png',
+      width: 256,
+      height: 300,
+      srcWidth: 256,
+      srcWidth: 300,
+      src: '/assets/images/characters/troll-1.png',
       animations: {
         idle: {
-          steps: 6,
+          steps: 8,
           y: 0
         },
         walk: {
-          steps: 6,
-          y: 100
+          steps: 8,
+          y: 300
         },
         reversedWalk: {
-          steps: 6,
-          y: 200
+          steps: 8,
+          y: 300
         }
       }
     });
