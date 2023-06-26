@@ -32,8 +32,17 @@ export default class Troll extends Character {
     this.changeActionChance = 0.05;
     this.speed = 2;
     this.action = "idle";
+
+    this.isSpeaking = false;
     this.slang = "";
+
     this.setAnimation("idle");
+    this.setDialog();
+  }
+  setDialog() {
+    this.dialog = document.createElement('div');
+    this.dialog.classList.add('game-dialog');
+    game.container.append(this.dialog)
   }
   updateMovment() {
     let x = 0, y = 0;
@@ -63,22 +72,26 @@ export default class Troll extends Character {
       this.setAnimation("idle");
     }
   }
-  speak(text) {
-    text.forEach((line, i) => {
-      game.drawText(line, this.x + this.width/2, this.y + (i * 20 - text.length * 20));
-    });
-  }
   onCollide() {
     super.onCollide();
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    this.slang = slang;
+
+    this.dialog.innerText = slang;
+    this.dialog.style.display = "block";
+    this.isSpeaking = true;
+
     setTimeout(() => {
-      this.slang = null
+      this.isSpeaking = false;
+      this.dialog.style.display = "none";
     }, 3000);
   }
   update() {
     this.updateMovment();
     super.update();
-    if (this.slang) this.speak(this.slang);
+
+    if (this.isSpeaking) {
+      this.dialog.style.left = this.projectedPosition.x + "px";
+      this.dialog.style.top = this.projectedPosition.y + "px";
+    }
   }
 }
