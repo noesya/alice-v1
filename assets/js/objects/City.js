@@ -6,9 +6,9 @@ import SpeakingThing from "./SpeakingThing";
 export default class City extends SpeakingThing {
   constructor(data) {
     data.hitbox = {
-      width: 50,
-      height: 50,
-      x: 75,
+      width: 70,
+      height: 70,
+      x: 50,
       y: 25
     }
 

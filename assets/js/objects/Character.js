@@ -18,7 +18,7 @@ export default class Character extends Sprite {
 
     const { matrice, size } = WORLD.collisions
 
-    if (this.type !== "hero") return;
+    // if (this.type !== "hero") return;
 
     const mapx = Math.round((x + this.width/2) / size)
     const mapy = Math.round((y + this.height/2) / size)
