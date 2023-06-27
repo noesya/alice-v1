@@ -1,4 +1,3 @@
-import { game } from "js/Game";
 import Thing from "./Thing";
 import { WORLD } from "../data/world";
 
@@ -7,9 +6,15 @@ export default class Map extends Thing {
     super({
       width: WORLD.width,
       height: WORLD.height,
-      srcWidth: WORLD.width,
-      srcHeight: WORLD.height,
+      srcWidth: WORLD.width * 2,
+      srcHeight: WORLD.height * 2,
       src: '/assets/images/map/map.png'
     })
+    this.setCollision();
+  }
+  setCollision() {
+    WORLD.collisions.matrice.forEach((line) => {
+      
+    });
   }
 }
