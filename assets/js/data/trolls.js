@@ -1,5 +1,27 @@
 export const TROLLS = {
     quantity: 3,
+    positions: [
+        {
+            x: 300,
+            y: 300
+        },
+        {
+            x: 1000,
+            y: 500
+        },
+        {
+            x: 2000,
+            y: 250
+        },
+        {
+            x: 300,
+            y: 800
+        },
+        {
+            x: 1800,
+            y: 500
+        }
+    ],
     images: [
         '/assets/images/characters/troll-1.png',
         '/assets/images/characters/troll-2.png',

@@ -29,10 +29,10 @@ export default class Scene {
   }
   addTrolls() {
     let i = 0;
-    TROLLS.images.forEach(src => {
+    TROLLS.images.forEach((src, i) => {
       this.trolls.push(new Troll({
-        x: Math.round(WORLD.width * Math.random()),
-        y: Math.round(WORLD.height * Math.random()),
+        x: TROLLS.positions[i].x,
+        y: TROLLS.positions[i].y,
         src: src
       }));
     })
