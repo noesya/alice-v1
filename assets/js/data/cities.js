@@ -27,8 +27,8 @@ export const CITIES = [
         src: '/assets/images/cities/mine-de-bloc.png',
         x: 500,
         y: 500,
-        srcWidth: 526,
-        srcHeight: 429,
+        srcWidth: 362,
+        srcHeight: 405,
         html: "<p>Ne dérangez pas les mineurs ! Un autre argument pour refuser les critiques consiste à dire que les évolutions technologiques sont inéluctables. C’est donc totalement inutile d’en discuter ou de lutter contre, ça revient à tenter de stopper la marche du temps. Les personnes critiques sont assimilées à des conservateurs obscurantistes, en comparant les cryptos à l’invention de l’imprimerie, ou tout simplement à des ringards imbéciles.</p><blockquote>Votre ignorance condamne l'industrie crypto comme d'autres ont condamné internet à privilégier le Minitel</blockquote><p>La question de la pertinence du Minitel, dans cet exemple, ou des raisons et des conséquences de l’essor d’Internet, ne sont évidemment pas posées. Il suffit de prendre un symbole pour en défendre un autre, il n’y a pas là l’ombre d’une pensée articulée. Le paradoxe du pharmakon posé par Bernard Stiegler, qui présente le numérique comme un remède autant qu’un poison, n’est pas envisagé. La simple maxime de Rabelais, “Science sans conscience n’est que ruine de l’âme”, semble bien trop sophistiquée. Pourquoi chercher pourquoi, quand on peut juste prêcher ? Jacques Ellul écrivait, à propos de la technique, “Il n’y a pas de hasard, pas de volonté claire, mais une urgence ressentie”. C’est exactement ce qui opère ici : la foi en la technologie supprime totalement le questionnement. Les choses qui peuvent être faites doivent être faites. C’est un commandement.</p>"
     },
     {
@@ -47,8 +47,8 @@ export const CITIES = [
         src: '/assets/images/cities/libertaria.png',
         x: 1500,
         y: 300,
-        srcWidth: 436,
-        srcHeight: 560,
+        srcWidth: 382,
+        srcHeight: 441,
         html: "<p>Bienvenue à Libertaria, le pays qui a résolu le problème de l'État. Car l'État, ça ne marche pas, c’est corrompu, inefficace, dangereux. C’est prouvé, il y a plein de problèmes sur Internet ! À Libertaria, on a donc supprimé l'État. Chacun fait ce qu’il veut, et tout va pour le mieux dans le meilleur des mondes.</p><blockquote>J'ai mis une grande partie de mes économies dans les cryptos pour que ma fille de 4 ans puisse un jour pouvoir vivre dignement. Je ne veux pas qu'elle soit l'esclave de l'état.</blockquote><p>Mais comment faire pour les détails, par exemple la loi, la justice, la police, l’école ? La solution est toute trouvée, elle s’appelle DAO, pour Decentralized Autonomous Organization. C’est ronflant, c’est supposé marcher à partir de blockchains et de smart contracts et ça n’a aucune réalité juridique, un peu comme les micro-nations. Évidemment, les problèmes subtils de construction de la confiance, de culture commune, de séparation des pouvoirs, d’équité de l’impôt, de réalité de la démocratie sont gommés par la magie de la technologie. Le niveau de maturité politique se situe entre la grande section de maternelle et le CP.</p>"
     },
     {
@@ -67,8 +67,8 @@ export const CITIES = [
         src: '/assets/images/cities/dome-tonnerre.png',
         x: 1600,
         y: 450,
-        srcWidth: 537,
-        srcHeight: 457,
+        srcWidth: 381,
+        srcHeight: 423,
         html: "<p>À Self-made city, on combat pour la liberté. La liberté fondamentale d’acheter des crypto-actifs qui s’écroulent. La liberté essentielle d’acquérir des NFTs de singes. La liberté absolue d’adorer les cryptos. La liberté inaliénable de refuser la régulation légale. La Liberté, la grande, avec un L majuscule, celle qui a permis la merveilleuse civilisation humaniste et durable dans laquelle nous vivons.</p><blockquote>Cessez de nous protéger, de faire notre bien malgré nous</blockquote><p>Car il faut savoir que cette liberté est menacée ! Des individus au service de mystérieuses puissances essaient de promulguer des lois, qui obligeraient les crypto-monnaies à se comporter comme les autres actifs financiers. C’est un scandale ! Une hérésie ! Empoignez vite vos crypto-lasers, il faut faire preuve de courage, et se battre. La Liberté en dépend.</p>"
     },
     {
@@ -87,7 +87,7 @@ export const CITIES = [
         src: '/assets/images/cities/mordor-club.png',
         x: 1650,
         y: 0,
-        srcWidth: 480,
+        srcWidth: 368,
         srcHeight: 401,
         html: "<p>Le Mordor Club est un concept révolutionnaire : un club de musculation réservé aux hommes, aux vrais, les cryptobros. C’est aussi un haut lieu de socialisation, permettant de se gausser ensemble de tout ce qui n’est pas crypto, et de jouir entre frères de la technophilie crypto phallique. On y fanfaronne en montrant ses tweets d’insultes, de menaces et d’agressions, souvent sexuelles. On se souvient avec émotion des raids orchestrés contre les hérétiques, les incroyants, les sorcières anti-cryptos.</p><blockquote>Sinon les rêgles elle peut les rouler et se les insérer dans le fion?</blockquote><p>On y voit exploser les violences des âmes blessées par les critiques contre leur paradis artificiel. On y voit la colère et la détestation se déverser en torrents masculinistes, en fantaisies de toute puissance dignes d’enfants de 5 ans. On notera la contribution du Mordor Club à l’assouplissement des règles orthographiques et syntaxiques, de nombreux membres semblant atteints de troubles dysorthographiques et dyslexiques.</p>"
     },
