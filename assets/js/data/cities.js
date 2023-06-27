@@ -7,8 +7,8 @@ export const CITIES = [
         src: '/assets/images/cities/kryptogarten.png',
         x: 300,
         y: 400,
-        srcWidth: 490,
-        srcHeight: 516,
+        srcWidth: 396,
+        srcHeight: 374,
         html: "<p>Bienvenue au Kryptogarten, où l’on pouponne les cryptobabies. Attention, l’endroit est interdit aux plus de 35 ans. Par un phénomène mystérieux, le cerveau, après cet âge fatidique, devient incapable de comprendre les merveilles techniques et les bienfaits économiques des cryptobidules. Ce fait scientifique est aussi solidement établi que la platitude de la Terre, d’ailleurs de nombreux sites en parlent !</p><blockquote>Si vous ne comprenez pas le bitcoin, cela signifie que vous êtes vieux. J'ai 78 ans. Je suis vieux. Je ne comprends pas.</blockquote><p>Faut-il y voir une habile façon, pour cette génération, d’écarter la précédente ? Cela serait une totale nouveauté sociologique, une innovation probablement appuyée sur un algorithme sophistiqué : les jeunes trouvent les vieux ringards. Et les vieux trouvent les jeunes immatures. La science avance.</p>"
     },
     {
@@ -17,8 +17,8 @@ export const CITIES = [
         src: '/assets/images/cities/crypto-university.png',
         x: 100,
         y: 900,
-        srcWidth: 515,
-        srcHeight: 395,
+        srcWidth: 365,
+        srcHeight: 337,
         html: "<p>Bienvenue à la Crypto-university, où l’on enseigne les subtilités technologiques permettant de parler des blockchains et des crypto-monnaies. C’est une université étrange, où l’on dispense plus de cours de marketing que de cours d’ingénierie informatique, comme en témoignent les curriculum vitae de bon nombre de personnes de la crypto-communauté, qui sortent d’écoles de commerce plus souvent que d’écoles d’ingénieur. En première année, on apprend le glossaire permettant de faire croire que l’on comprend quelque chose. En deuxième année, on apprend que les gens qui critiquent les cryptos ne les comprennent pas, parce qu’ils n’ont pas suivi la première année. C’est tout simplement trop technique, trop compliqué, trop difficile d’accès.</p><blockquote>Un petit conseil, débarrassez vous de vos préjugés, vous y verrez plus clair.</blockquote><p>Donc, si on émet des réserves ou si on souligne des problèmes, c’est qu’on ne comprend rien. Il est intéressant de constater que le fait d’être designer numérique, développeur Web ou polytechnicien ne protège absolument pas de cette étrange défense rhétorique : si on critique, c’est qu’on ne comprend rien techniquement.</p>"
     },
     {
@@ -57,8 +57,8 @@ export const CITIES = [
         src: '/assets/images/cities/dome-tonnerre.png',
         x: 800,
         y: 300,
-        srcWidth: 428,
-        srcHeight: 428,
+        srcWidth: 262,
+        srcHeight: 378,
         html: "<p>Attention, vous entrez dans un espace à l’hygiène douteuse. Le dôme du tonnerre, tout près de Libertaria, est un espace d’intense détestation. L’Europe y est la cause de tous les maux, et mérite de disparaître dans d'atroces souffrances, entraînant avec elle ses états corrompus et sa monnaie maléfique, l’Euro.</p><blockquote>Bitcoin servira d'étalon que vous le vouliez ou pas... Vivement que votre euro s'écroule !</blockquote><p>Le projet de Robert Schuman et Jean Monnet est bien loin. Pourquoi nourrir le dialogue entre les peuples, pourquoi construire ensemble un cadre commun, pourquoi faire des séjours Erasmus, alors qu’il suffit, pour tout résoudre, de cliquer ici ? L’algorithme contre la corruption, le logiciel contre la violence, la plateforme en SaaS contre la pauvreté, c’était pourtant simple. Vivement…</p>"
     },
     {
