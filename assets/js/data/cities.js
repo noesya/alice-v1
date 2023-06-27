@@ -97,8 +97,8 @@ export const CITIES = [
         src: '/assets/images/cities/cimetiere-du-nft.png',
         x: 400,
         y: 800,
-        srcWidth: 512,
-        srcHeight: 471,
+        srcWidth: 394,
+        srcHeight: 354,
         html: "<p>FTX, Terra et Luna, Celsius, 3 Arrows Capital, c’est ici que l’on commémore les morts au front. Parce qu’il ne faudrait pas croire que la cryptolife est un long fleuve tranquille ! Il y a des hauts, très hauts, aussi hauts qu’une immense pyramide de Ponzi, et des bas, très bas, comme une faillite.</p><blockquote>Qui aurait pu prédire la crise cryptographique ?</blockquote><p>Mais n'ayez aucune crainte, la technologie est si formidable qu'on pourra certainement ressusciter les morts. Bientôt... Il faut penser à long-terme.</p>"
     }
 ];
