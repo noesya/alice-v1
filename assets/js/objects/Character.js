@@ -13,11 +13,23 @@ export default class Character extends Sprite {
   }
   move(x, y) {
     const { area } = WORLD
-    this.x += x * this.speed;
-    this.y += y * this.speed;
+    x = this.x + x * this.speed;
+    y = this.y + y * this.speed;
 
-    this.x = Math.max(area.left, Math.min(this.x, area.right));
-    this.y = Math.max(area.top, Math.min(this.y, area.bottom));
+    const { matrice, size } = WORLD.collisions
+
+    // if (this.type !== "hero") return;
+
+    const mapx = Math.round((x + this.width/2) / size)
+    const mapy = Math.round((y + this.height/2) / size)
+
+    if (matrice[mapy][mapx] == 1) {
+      this.x = x;
+      this.y = y;
+    }
+
+    // this.x = Math.max(area.left, Math.min(this.x, area.right));
+    // this.y = Math.max(area.top, Math.min(this.y, area.bottom));
   }
   onCollide() {
     this.canCollide = false;

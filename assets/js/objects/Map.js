@@ -16,8 +16,11 @@ export default class Map extends Thing {
     super.update();
   }
   setCollision() {
+    this.collisionMap = [];
     WORLD.collisions.matrice.forEach((line) => {
-
+      line.split('').forEach((cell, x) => {
+        this.collisionMap.push(cell)
+      })
     });
   }
   drawCollisionMap(){
