@@ -31,7 +31,7 @@ export default class Map extends Thing {
   drawSquare(x, y, size, active) {
     game.ctx.beginPath(); // RESET path here
     game.ctx.globalAlpha = 0.6;
-    game.ctx.fillStyle = active == 1 ? "lightblue" : "red";
+    game.ctx.fillStyle = active == 1 ? "transparent" : "red";
     game.ctx.fillRect(x * size + game.camera.x, y * size + game.camera.y, size, size)
     game.ctx.globalAlpha = 1.0;
   }
