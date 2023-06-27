@@ -35,6 +35,7 @@ export default class Troll extends Character {
 
     this.isSpeaking = false;
     this.slang = "";
+    this.slangMilliseconds = 5000;
 
     this.setAnimation("idle");
   }
@@ -71,7 +72,7 @@ export default class Troll extends Character {
     const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
     this.speak(slang);
 
-    setTimeout(() => this.stopSpeaking(), 3000);
+    setTimeout(() => this.stopSpeaking(), this.slangMilliseconds);
   }
   update() {
     if (this.isSpeaking) {
