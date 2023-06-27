@@ -1,6 +1,6 @@
 export const WORLD = {
-  width: 3800,
-  height: 1900,
+  width: 2500,
+  height: 1016,
   area: {
     left: 200,
     top: 200,
