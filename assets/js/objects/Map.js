@@ -1,5 +1,6 @@
 import Thing from "./Thing";
 import { WORLD } from "../data/world";
+import { game } from "js/Game";
 
 export default class Map extends Thing {
   constructor() {
@@ -11,10 +12,33 @@ export default class Map extends Thing {
       src: '/assets/images/map/map.png'
     })
     this.setCollision();
+    this.drawCollisionMap();
+    super.update();
   }
   setCollision() {
     WORLD.collisions.matrice.forEach((line) => {
-      
+
     });
   }
+  drawCollisionMap(){
+    const size = WORLD.collisions.size;
+    WORLD.collisions.matrice.forEach((line, y) => {
+      line.split('').forEach((cell, x) => {
+        this.drawSquare(x, y, size, cell)
+      })
+    });
+  }
+  drawSquare(x, y, size, active) {
+    game.ctx.beginPath(); // RESET path here
+    game.ctx.globalAlpha = 0.6;
+    game.ctx.fillStyle = active == 1 ? "lightblue" : "red";
+    game.ctx.fillRect(x * size + game.camera.x, y * size + game.camera.y, size, size)
+    game.ctx.globalAlpha = 1.0;
+  }
+  update() {
+    // return;
+    super.update();
+    this.drawCollisionMap();
+  }
+
 }
