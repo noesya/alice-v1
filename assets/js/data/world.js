@@ -2,10 +2,10 @@ export const WORLD = {
   width: 3800,
   height: 1900,
   area: {
-    left: 100,
-    top: 60,
-    right: 1800,
-    bottom: 900
+    left: 200,
+    top: 200,
+    right: 3000,
+    bottom: 1400
   },
   matrice: [
     '1111111111111111111111111111111111111111111111111111111111111111111111111111111',

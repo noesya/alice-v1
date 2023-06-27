@@ -11,7 +11,13 @@ export default class City extends SpeakingThing {
       x: 75,
       y: 25
     }
+
+    const scale = 0.5;
+    data.width = data.srcWidth * scale;
+    data.height = data.srcHeight * scale;
+
     super(data);
+
     this.type = "city";
     this.data = data;
     this.html = data.html;
