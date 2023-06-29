@@ -56,7 +56,7 @@ export const TROLLS = {
         'C\'est toi le troll.',
         'C’est que de l’idéologie cette meuf avec du bla-bla et 0 travail de fond.',
         'Cette bonne femme ne sert a rien mdrrr',
-        'T une bouffonne...et finance le rouleau compresseur va tecraser avec tes lois a la con!!! Incompétente jusque la !!! Ahahaha',
+        'T une bouffonne...',
         'Quelle sale conne !! Pourquoi ne va-t-elle pas débattre de ses idées merdique ? Il faut la remettre à sa place. 😂😂',
         'Ne serait t\'il pas temps d\'arrêter des tweeter des idioties H24 et de se mettre à faire son boulot Bécassine',
         'Tu es inutile dans ce monde',
