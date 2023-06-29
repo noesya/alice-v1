@@ -9,7 +9,7 @@ export default class Hero extends Character {
       height: 150,
       srcWidth: 256,
       srcHeight: 300,
-      src: '/assets/images/characters/alice.png',
+      src: '/assets/webp/characters/alice.webp',
       animations: {
         idle: {
           steps: 8,
