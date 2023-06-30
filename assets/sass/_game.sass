@@ -1,3 +1,11 @@
+@keyframes sea
+  0%
+    background-position: 0 0
+  50%
+    background-position: 41px -20px
+  100%
+    background-position: 83px 0
+
 .game-container
   position: fixed
   inset: 0
@@ -6,6 +14,8 @@
   display: block
   position: fixed
   inset: 0
+  background-image: url('/assets/images/sea/pattern-sea.png')
+  animation: 3s sea infinite ease-in-out
   z-index: 1
   &:not(:target)
     opacity: 0

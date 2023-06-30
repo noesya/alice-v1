@@ -7,8 +7,8 @@ export const CITIES = [
         src: '/assets/webp/cities/kryptogarten.webp',
         x: 60,
         y: 680,
-        srcWidth: 396,
-        srcHeight: 374,
+        srcWidth: 401,
+        srcHeight: 389,
         html: "<p>Bienvenue au Kryptogarten, où l’on pouponne les cryptobabies. Attention, l’endroit est interdit aux plus de 35 ans. Par un phénomène mystérieux, le cerveau, après cet âge fatidique, devient incapable de comprendre les merveilles techniques et les bienfaits économiques des cryptobidules. Ce fait scientifique est aussi solidement établi que la platitude de la Terre, d’ailleurs de nombreux sites en parlent !</p><blockquote>Si vous ne comprenez pas le bitcoin, cela signifie que vous êtes vieux. J'ai 78 ans. Je suis vieux. Je ne comprends pas.</blockquote><p>Faut-il y voir une habile façon, pour cette génération, d’écarter la précédente ? Cela serait une totale nouveauté sociologique, une innovation probablement appuyée sur un algorithme sophistiqué : les jeunes trouvent les vieux ringards. Et les vieux trouvent les jeunes immatures. La science avance.</p>"
     },
     {
@@ -17,8 +17,8 @@ export const CITIES = [
         src: '/assets/webp/cities/crypto-university.webp',
         x: 1440,
         y: 460,
-        srcWidth: 365,
-        srcHeight: 337,
+        srcWidth: 376,
+        srcHeight: 349,
         html: "<p>Bienvenue à la Crypto-university, où l’on enseigne les subtilités technologiques permettant de parler des blockchains et des crypto-monnaies. C’est une université étrange, où l’on dispense plus de cours de marketing que de cours d’ingénierie informatique, comme en témoignent les curriculum vitae de bon nombre de personnes de la crypto-communauté, qui sortent d’écoles de commerce plus souvent que d’écoles d’ingénieur. En première année, on apprend le glossaire permettant de faire croire que l’on comprend quelque chose. En deuxième année, on apprend que les gens qui critiquent les cryptos ne les comprennent pas, parce qu’ils n’ont pas suivi la première année. C’est tout simplement trop technique, trop compliqué, trop difficile d’accès.</p><blockquote>Un petit conseil, débarrassez vous de vos préjugés, vous y verrez plus clair.</blockquote><p>Donc, si on émet des réserves ou si on souligne des problèmes, c’est qu’on ne comprend rien. Il est intéressant de constater que le fait d’être designer numérique, développeur Web ou polytechnicien ne protège absolument pas de cette étrange défense rhétorique : si on critique, c’est qu’on ne comprend rien techniquement.</p>"
     },
     {
@@ -27,8 +27,8 @@ export const CITIES = [
         src: '/assets/webp/cities/mine-de-bloc.webp',
         x: 1300,
         y: 150,
-        srcWidth: 362,
-        srcHeight: 405,
+        srcWidth: 366,
+        srcHeight: 416,
         html: "<p>Ne dérangez pas les mineurs ! Un autre argument pour refuser les critiques consiste à dire que les évolutions technologiques sont inéluctables. C’est donc totalement inutile d’en discuter ou de lutter contre, ça revient à tenter de stopper la marche du temps. Les personnes critiques sont assimilées à des conservateurs obscurantistes, en comparant les cryptos à l’invention de l’imprimerie, ou tout simplement à des ringards imbéciles.</p><blockquote>Votre ignorance condamne l'industrie crypto comme d'autres ont condamné internet à privilégier le Minitel</blockquote><p>La question de la pertinence du Minitel, dans cet exemple, ou des raisons et des conséquences de l’essor d’Internet, ne sont évidemment pas posées. Il suffit de prendre un symbole pour en défendre un autre, il n’y a pas là l’ombre d’une pensée articulée. Le paradoxe du pharmakon posé par Bernard Stiegler, qui présente le numérique comme un remède autant qu’un poison, n’est pas envisagé. La simple maxime de Rabelais, “Science sans conscience n’est que ruine de l’âme”, semble bien trop sophistiquée. Pourquoi chercher pourquoi, quand on peut juste prêcher ? Jacques Ellul écrivait, à propos de la technique, “Il n’y a pas de hasard, pas de volonté claire, mais une urgence ressentie”. C’est exactement ce qui opère ici : la foi en la technologie supprime totalement le questionnement. Les choses qui peuvent être faites doivent être faites. C’est un commandement.</p>"
     },
     {
@@ -37,8 +37,8 @@ export const CITIES = [
         src: '/assets/webp/cities/eglise-sainte-crypto.webp',
         x: 500,
         y: 630,
-        srcWidth: 471,
-        srcHeight: 445,
+        srcWidth: 371,
+        srcHeight: 429,
         html: "<p>Entrez, entrez, fidèles cryptobros ! Soyez les bienvenus dans ce lieu de foi véritable. Car la seule voie lumineuse, la bonne voie, l’orthodoxie non fongible, c’est évidemment que tout va bien : un océan d’opportunités technologiques, avec certes quelques petites optimisations à faire, mais rien de grave. Nous ne sommes plus ni dans le domaine de la science qui cherche la connaissance, ni dans celui de la technique qui cherche l’efficacité : nous sommes bel et bien dans le domaine de la foi.</p><blockquote>Il n'y a aucun malfaiteur qui blanchit en Crypto ça n'a aucun sens de suspecter tout le monde pour rien…</blockquote><p>Cela revient à dire que les comptes anonymes en Suisse sont transparents, puisque chaque compte a un numéro. Évidemment, si on ne sait pas à qui appartient chaque numéro, la démonstration perd de sa pertinence. C’est ce qui arrive avec les blockchains : les enregistrements sont publics et consultables par tout le monde, mais l’identité des acteurs est anonyme. Quant à la gabegie énergétique, l’argumentation peut prendre diverses formes, par exemple l’abus de name dropping (smart contract, lightning network, PoS, PoW...) ou le simple discrédit ad hominem, et bien trop souvent ad feminam (“Ce n'est clairement pas une interlocutrice valable 😂”, “Qu'elle vienne débattre après s'être formée pour commencer !”). En effet, la cryptosphère est très masculine. Lorsque les députées Aurore Lalucq et Assita Kanko ont œuvré avec courage pour tenter de réglementer le secteur des cryptomonnaies, elles ont fait face à de nombreuses agressions, dont beaucoup liaient féminité et incompétence. Nous y reviendrons à d’autres étapes.</p>"
     },
     {
@@ -47,8 +47,8 @@ export const CITIES = [
         src: '/assets/webp/cities/libertaria.webp',
         x: 2140,
         y: 450,
-        srcWidth: 382,
-        srcHeight: 441,
+        srcWidth: 391,
+        srcHeight: 459,
         html: "<p>Bienvenue à Libertaria, le pays qui a résolu le problème de l'État. Car l'État, ça ne marche pas, c’est corrompu, inefficace, dangereux. C’est prouvé, il y a plein de problèmes sur Internet ! À Libertaria, on a donc supprimé l'État. Chacun fait ce qu’il veut, et tout va pour le mieux dans le meilleur des mondes.</p><blockquote>J'ai mis une grande partie de mes économies dans les cryptos pour que ma fille de 4 ans puisse un jour pouvoir vivre dignement. Je ne veux pas qu'elle soit l'esclave de l'état.</blockquote><p>Mais comment faire pour les détails, par exemple la loi, la justice, la police, l’école ? La solution est toute trouvée, elle s’appelle DAO, pour Decentralized Autonomous Organization. C’est ronflant, c’est supposé marcher à partir de blockchains et de smart contracts et ça n’a aucune réalité juridique, un peu comme les micro-nations. Évidemment, les problèmes subtils de construction de la confiance, de culture commune, de séparation des pouvoirs, d’équité de l’impôt, de réalité de la démocratie sont gommés par la magie de la technologie. Le niveau de maturité politique se situe entre la grande section de maternelle et le CP.</p>"
     },
     {
@@ -57,8 +57,8 @@ export const CITIES = [
         src: '/assets/webp/cities/dome-tonnerre.webp',
         x: 2050,
         y: 200,
-        srcWidth: 262,
-        srcHeight: 378,
+        srcWidth: 265,
+        srcHeight: 387,
         html: "<p>Attention, vous entrez dans un espace à l’hygiène douteuse. Le dôme du tonnerre, tout près de Libertaria, est un espace d’intense détestation. L’Europe y est la cause de tous les maux, et mérite de disparaître dans d'atroces souffrances, entraînant avec elle ses états corrompus et sa monnaie maléfique, l’Euro.</p><blockquote>Bitcoin servira d'étalon que vous le vouliez ou pas... Vivement que votre euro s'écroule !</blockquote><p>Le projet de Robert Schuman et Jean Monnet est bien loin. Pourquoi nourrir le dialogue entre les peuples, pourquoi construire ensemble un cadre commun, pourquoi faire des séjours Erasmus, alors qu’il suffit, pour tout résoudre, de cliquer ici ? L’algorithme contre la corruption, le logiciel contre la violence, la plateforme en SaaS contre la pauvreté, c’était pourtant simple. Vivement…</p>"
     },
     {
@@ -77,7 +77,7 @@ export const CITIES = [
         src: '/assets/webp/cities/bankochain.webp',
         x: 1000,
         y: 600,
-        srcWidth: 298,
+        srcWidth: 306,
         srcHeight: 383,
         html: "<p>Bienvenue chez Bankochain, la seule banque qui vous rend riche ! Car les crypto-monnaies, ça monte, ça monte, et tout le monde en profite. Les petites notes à la fin du smart-contract ? Non, ce n’est rien du tout, ayez confiance. On m’informe à l’instant que le cours du Bitcoin vient encore de perdre 50%, profitez-en c’est une opportunité extraordinaire !</p><blockquote>Les pauvres ont trouvé un moyen de faire du fric sans nous, il faut vite taxer et arrêter ça</blockquote><p>Ah pendant que j’y pense, ne perdez pas votre mot de passe. C’est un détail absurde, vous allez rire, mais nous n’avons pas prévu de fonctionnalité pour le récupérer. C’est trop compliqué, on n’y arrive pas. Et puis après tout ce n’est pas grave ! Vous avez perdu toutes vos économies ? Ce sera regagné en un rien de temps, si vous prenez quelques risques. Et si vous n’aimez pas les risques, il y a des stablecoins, des crypto-monnaies absolument stables. Est-ce que c’est sûr ? Évidemment, puisqu’on vous le dit ! C’est garanti par des algorithmes ! Des machines, quoi ! C’est infaillible, ce ne sont pas des stupides humains ! Une information vient de m’arriver, le stablecoin Terra vient de s’écrouler, il est annulé. Que voulez-vous, l’innovation, c’est parfois de la destruction créatrice.</p>"
     },
@@ -87,7 +87,7 @@ export const CITIES = [
         src: '/assets/webp/cities/mordor-club.webp',
         x: 2200,
         y: -100,
-        srcWidth: 368,
+        srcWidth: 375,
         srcHeight: 401,
         html: "<p>Le Mordor Club est un concept révolutionnaire : un club de musculation réservé aux hommes, aux vrais, les cryptobros. C’est aussi un haut lieu de socialisation, permettant de se gausser ensemble de tout ce qui n’est pas crypto, et de jouir entre frères de la technophilie crypto phallique. On y fanfaronne en montrant ses tweets d’insultes, de menaces et d’agressions, souvent sexuelles. On se souvient avec émotion des raids orchestrés contre les hérétiques, les incroyants, les sorcières anti-cryptos.</p><blockquote>Sinon les rêgles elle peut les rouler et se les insérer dans le fion?</blockquote><p>On y voit exploser les violences des âmes blessées par les critiques contre leur paradis artificiel. On y voit la colère et la détestation se déverser en torrents masculinistes, en fantaisies de toute puissance dignes d’enfants de 5 ans. On notera la contribution du Mordor Club à l’assouplissement des règles orthographiques et syntaxiques, de nombreux membres semblant atteints de troubles dysorthographiques et dyslexiques.</p>"
     },
@@ -97,8 +97,8 @@ export const CITIES = [
         src: '/assets/webp/cities/cimetiere-du-nft.webp',
         x: 1600,
         y: 160,
-        srcWidth: 394,
-        srcHeight: 354,
+        srcWidth: 387,
+        srcHeight: 426,
         html: "<p>FTX, Terra et Luna, Celsius, 3 Arrows Capital, c’est ici que l’on commémore les morts au front. Parce qu’il ne faudrait pas croire que la cryptolife est un long fleuve tranquille ! Il y a des hauts, très hauts, aussi hauts qu’une immense pyramide de Ponzi, et des bas, très bas, comme une faillite.</p><blockquote>Qui aurait pu prédire la crise cryptographique ?</blockquote><p>Mais n'ayez aucune crainte, la technologie est si formidable qu'on pourra certainement ressusciter les morts. Bientôt... Il faut penser à long-terme.</p>"
     }
 ];
