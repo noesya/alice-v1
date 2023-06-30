@@ -5,6 +5,7 @@ import Hero from './objects/Hero';
 import City from './objects/City';
 import Map from './objects/Map';
 import Troll from './objects/Troll';
+import Sea from './objects/Ocean';
 
 export default class Scene {
   constructor(game) {
@@ -16,6 +17,7 @@ export default class Scene {
   }
   setup() {
     this.map = new Map();
+    // this.sea = new Sea();
     this.hero = new Hero({
       x: WORLD.width / 4, // Pas compris pour "/4"
       y: WORLD.height / 4
@@ -52,6 +54,7 @@ export default class Scene {
   }
   update() {
     this.map.update();
+    // this.sea.update();
     this.elements.sort((a, b) => a.y - b.y)
     this.elements.forEach(element => element.update());
 

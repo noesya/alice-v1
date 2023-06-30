@@ -22,6 +22,11 @@ export default class Character extends Sprite {
 
     const mapx = Math.round((x + this.width/2) / size)
     const mapy = Math.round((y + this.height/2) / size)
+    if (matrice.length < mapy) {
+      return;
+    } else if (matrice[mapy].length < mapy) {
+      return;
+    }
 
     if (matrice[mapy][mapx] == 1) {
       this.x = x;
