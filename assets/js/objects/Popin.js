@@ -18,6 +18,10 @@ class Popin {
     hide() {
         this.element.classList.remove("active");
         document.body.classList.remove("is-popin-opened");
+        document.body.classList.add("is-popin-closing");
+        setTimeout(() => {
+            document.body.classList.remove("is-popin-closing");
+        }, 400);
     }
 }
 

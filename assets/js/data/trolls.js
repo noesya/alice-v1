@@ -29,6 +29,12 @@ export const TROLLS = {
         '/assets/webp/characters/troll-4.webp',
         '/assets/webp/characters/troll-5.webp'
     ],
+    authors: [
+        'iLoveMoney',
+        'anonymousTroll',
+        'cryptoFan',
+        'NFTcollector'
+    ],
     slangs: [
         'Restez pauvres bandes de fils de putes',
         'Vas-y régule moi ça ma gourmande',

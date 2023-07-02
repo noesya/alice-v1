@@ -28,12 +28,14 @@ export default class City extends SpeakingThing {
     this.dialog.classList.add('game-dialog--action');
     this.dialog.addEventListener('click', () => this.openPopin());
   }
+
   onCollide() {
     this.isCollided = true;
-    this.speak("Entrer dans la ville")
+    this.speak(`<p>${this.data.name}</p>`)
   }
 
   openPopin() {
+    console.log('pop')
     popinCity.show(this.data);
   }
 
@@ -41,7 +43,6 @@ export default class City extends SpeakingThing {
     super.update();
 
     if (this.isCollided) {
-      this.speak("Entrer dans la ville")
       this.updateDialog();
     } else {
       this.stopSpeaking();
