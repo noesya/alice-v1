@@ -69,8 +69,17 @@ export default class Troll extends Character {
   }
   onCollide() {
     super.onCollide();
-    const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))];
-    this.speak(slang);
+    const slang = TROLLS.slangs[Math.round(Math.random() * (TROLLS.slangs.length-1))],
+      author = TROLLS.authors[Math.round(Math.random() * (TROLLS.authors.length-1))];
+
+    // this.speak(`
+    //   <p>“${slang}”</p>
+    //   <small>by @${author}</small>
+    // `);
+
+    this.speak(`
+      <p>“${slang}”</p>
+    `);
 
     setTimeout(() => this.stopSpeaking(), this.slangMilliseconds);
   }

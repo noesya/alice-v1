@@ -18,6 +18,7 @@ export default class Thing {
     this.hitbox = hitbox || { width, height, x: 0, y: 0 };
     this.src = src;
     this.ready = this.src ? true : false;
+    this.depthOffset = 0;
 
     this.center = {
       x: this.x - this.width / 2,

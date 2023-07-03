@@ -8,6 +8,7 @@ export default class Character extends Sprite {
     this.type = "character";
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
+    this.depthOffset = -40;
 
     //TEST
   }
@@ -22,9 +23,9 @@ export default class Character extends Sprite {
 
     const mapx = Math.round((x + this.width/2) / size)
     const mapy = Math.round((y + this.height/2) / size)
-    if (matrice.length < mapy) {
+    if (typeof matrice[mapy] == 'undefined') {
       return;
-    } else if (matrice[mapy].length < mapy) {
+    } else if (matrice[mapy].length < mapx) {
       return;
     }
 

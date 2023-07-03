@@ -23,11 +23,17 @@ export const TROLLS = {
         }
     ],
     images: [
-        '/assets/webp/characters/troll-1.webp',
-        '/assets/webp/characters/troll-2.webp',
-        '/assets/webp/characters/troll-3.webp',
-        '/assets/webp/characters/troll-4.webp',
-        '/assets/webp/characters/troll-5.webp'
+        '/assets/images/characters/troll-1.png',
+        '/assets/images/characters/troll-2.png',
+        '/assets/images/characters/troll-3.png',
+        '/assets/images/characters/troll-4.png',
+        '/assets/images/characters/troll-5.png'
+    ],
+    authors: [
+        'iLoveMoney',
+        'anonymousTroll',
+        'cryptoFan',
+        'NFTcollector'
     ],
     slangs: [
         'Restez pauvres bandes de fils de putes',

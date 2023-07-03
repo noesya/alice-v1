@@ -55,7 +55,7 @@ export default class Scene {
   update() {
     this.map.update();
     // this.sea.update();
-    this.elements.sort((a, b) => a.y - b.y)
+    this.elements.sort((a, b) => (a.y + a.depthOffset) - (b.y + b.depthOffset))
     this.elements.forEach(element => element.update());
 
     this.checkCollision();
