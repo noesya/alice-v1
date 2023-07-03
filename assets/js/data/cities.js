@@ -4,7 +4,7 @@ export const CITIES = [
     {
         name: 'Kryptogarten',
         baseline: 'Vous ne comprenez pas, c’est technique',
-        src: '/assets/webp/cities/kryptogarten.webp',
+        src: '/assets/images/cities/kryptogarten.png',
         x: 60,
         y: 680,
         srcWidth: 401,
@@ -14,7 +14,7 @@ export const CITIES = [
     {
         name: 'Crypto-university',
         baseline: 'Vous avez plus de 35 ans, vous ne pouvez pas comprendre',
-        src: '/assets/webp/cities/crypto-university.webp',
+        src: '/assets/images/cities/crypto-university.png',
         x: 1440,
         y: 460,
         srcWidth: 376,
@@ -24,7 +24,7 @@ export const CITIES = [
     {
         name: 'La mine de blocs',
         baseline: 'On n’arrête pas le progrès',
-        src: '/assets/webp/cities/mine-de-bloc.webp',
+        src: '/assets/images/cities/mine-de-bloc.png',
         x: 1300,
         y: 150,
         srcWidth: 366,
@@ -34,7 +34,7 @@ export const CITIES = [
     {
         name: 'Eglise de la Sainte Crypto',
         baseline: 'C’est un faux problème',
-        src: '/assets/webp/cities/eglise-sainte-crypto.webp',
+        src: '/assets/images/cities/eglise-sainte-crypto.png',
         x: 500,
         y: 630,
         srcWidth: 371,
@@ -44,7 +44,7 @@ export const CITIES = [
     {
         name: 'Libertaria',
         baseline: 'L’état est un échec et un danger',
-        src: '/assets/webp/cities/libertaria.webp',
+        src: '/assets/images/cities/libertaria.png',
         x: 2140,
         y: 450,
         srcWidth: 391,
@@ -54,7 +54,7 @@ export const CITIES = [
     {
         name: 'Le dôme du tonnerre',
         baseline: 'Mort à l’europe',
-        src: '/assets/webp/cities/dome-tonnerre.webp',
+        src: '/assets/images/cities/dome-tonnerre.png',
         x: 2050,
         y: 200,
         srcWidth: 265,
@@ -64,7 +64,7 @@ export const CITIES = [
     {
         name: 'Self-made city',
         baseline: 'Vous ne laissez pas les gens libres',
-        src: '/assets/webp/cities/self-made-city.webp',
+        src: '/assets/images/cities/self-made-city.png',
         x: 350,
         y: 300,
         srcWidth: 381,
@@ -74,7 +74,7 @@ export const CITIES = [
     {
         name: 'Bankochain',
         baseline: 'Les pauvres ont le droit de devenir riches',
-        src: '/assets/webp/cities/bankochain.webp',
+        src: '/assets/images/cities/bankochain.png',
         x: 1000,
         y: 600,
         srcWidth: 306,
@@ -84,7 +84,7 @@ export const CITIES = [
     {
         name: 'Mordor Club',
         baseline: 'Vas-y régule moi ça ma gourmande',
-        src: '/assets/webp/cities/mordor-club.webp',
+        src: '/assets/images/cities/mordor-club.png',
         x: 2200,
         y: -100,
         srcWidth: 375,
@@ -94,7 +94,7 @@ export const CITIES = [
     {
         name: 'Cimetière du NFT',
         baseline: 'Ci-gît la défunte DAO',
-        src: '/assets/webp/cities/cimetiere-du-nft.webp',
+        src: '/assets/images/cities/cimetiere-du-nft.png',
         x: 1600,
         y: 160,
         srcWidth: 387,
