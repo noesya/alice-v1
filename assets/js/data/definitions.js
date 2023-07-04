@@ -1,30 +1,67 @@
+
+
 export const DEFINITIONS = [
     { 
         title: 'Bitcoin', 
+        src: '/assets/images/coin/coin.png',
+        x: 50,
+        y: 700,
+        srcWidth: 401,
+        srcHeight: 389,
         text: 'Première monnaie appuyée sur une blockchain, inventée par Satoshi Nakamoto. Gouffre énergétique. Objet de culte.' 
     },
     {
         title: 'Blockchain',
+        src: '/assets/images/coin/coin.png',
+        x: 950,
+        y: 500,
+        srcWidth: 401,
+        srcHeight: 389,
         text: 'Technologie permettant d’enregistrer des lignes dans un registre, de façon plus ou moins sécurisée et plus ou moins énergivore.'
     },
     {
         title: 'Carte graphique',
+        src: '/assets/images/coin/coin.png',
+        x: 1350,
+        y: 200,
+        srcWidth: 366,
+        srcHeight: 416,
         text: 'Avant l’avènement des cryptos, une carte graphique était un composant permettant d’afficher des images. Plus maintenant ! C’est devenu un composant pour miner (cf Minage), générant une énorme augmentation de la demande : depuis 2021, en 18 mois, les mineurs de crypto-monnaies ont dépensé <a href="https://www.01net.com/actualites/15-milliards-dollars-cartes-graphiques-depenses-folles-mineurs-crypto-2021.html" target="_blank">plus de 15 milliards de dollars pour en acheter</a>.'
     },
     {
         title: 'Crypto bro',
+        src: '/assets/images/coin/coin.png',
+        x: 550,
+        y: 700,
+        srcWidth: 371,
+        srcHeight: 429,
         text: 'Jeune homme plein d’enthousiasme pour les cryptos, qui partage son engouement de façon bruyante, parfois en insultant des crypto-athées.'
     },
     {
         title: 'Crypto monnaie',
+        src: '/assets/images/coin/coin.png',
+        x: 2200,
+        y: 500,
+        srcWidth: 391,
+        srcHeight: 459,
         text: 'Monnaie numérique utilisant la blockchain comme socle technique, sans banque centrale et sans état. Synonymes : crypto actif, crypto devise.'
     },
     {
         title: 'Crypto troll',
+        src: '/assets/images/coin/coin.png',
+        x: 2100,
+        y: 250,
+        srcWidth: 265,
+        srcHeight: 387,
         text: 'Crypto bro particulièrement porté sur l’insulte et la mauvaise foi.'
     },
     {
         title: 'DAO (Decentralized Autonomous Organization)',
+        src: '/assets/images/coin/coin.png',
+        x: 400,
+        y: 350,
+        srcWidth: 390,
+        srcHeight: 423,
         text: 'Organisation magique permettant de résoudre tous les problèmes du monde. Garantit aussi le retour de l’être aimé et la puissance sexuelle.'
     },
     {
@@ -83,4 +120,5 @@ export const DEFINITIONS = [
         title: 'Token',
         text: 'Un jeton qui se donne des grands airs. C’est juste une chaîne de caractères un peu longue.'
     }
-]
+];
+

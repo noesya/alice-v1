@@ -1,17 +1,20 @@
 import {CITIES} from './data/cities';
 import {TROLLS} from './data/trolls';
 import {WORLD} from './data/world';
+import {DEFINITIONS} from './data/definitions';
 import Hero from './objects/Hero';
 import City from './objects/City';
 import Map from './objects/Map';
 import Troll from './objects/Troll';
 import Sea from './objects/Ocean';
+import Coin from './objects/Coin';
 
 export default class Scene {
   constructor(game) {
     this.game = game;
     this.cities = [];
     this.trolls = [];
+    this.definitions = [];
     this.elementsToUpdate = [];
     this.setup();
   }
@@ -25,9 +28,12 @@ export default class Scene {
     CITIES.forEach(city => {
         this.cities.push(new City(city));
     });
+    DEFINITIONS.forEach(definition => {
+        this.coins.push(new Coin(definition));
+    });
     this.addTrolls();
 
-    this.elements = [...this.cities, ...this.trolls, this.hero]
+    this.elements = [...this.cities, ...this.trolls, ...this.definitions, this.hero,]
   }
   addTrolls() {
     let i = 0;

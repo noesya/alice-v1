@@ -44,5 +44,5 @@ export default class Thing {
     if (!this.ready) return;
     game.drawImage(this.image, 0, 0, this.srcWidth, this.srcHeight, this.x, this.y, this.width, this.height);
   }
-  
+
 }
