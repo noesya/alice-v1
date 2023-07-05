@@ -23,7 +23,7 @@ export default class City extends SpeakingThing {
     this.html = data.html;
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
-    this.isCollided = true;
+    this.isCollided = false;
     this.wasCollided = false
 
     this.dialog.classList.add('game-dialog--action');
@@ -32,30 +32,26 @@ export default class City extends SpeakingThing {
 
   onCollide() {
     this.isCollided = true;
-    popinCity.show(this.data);
   }
 
-  onUncollide() {
+  startCollide() {
+    popinCity.show(this.data);  
+  }
+
+  stopCollide() {
     popinCity.hide();
-  }
-
-  openPopin() {
-    popinCity.show(this.data);
   }
 
   update() {
     super.update();
 
-    if (this.isCollided) {
+    if (this.isCollided && !this.wasCollided) {
       this.wasCollided = true;
-      this.updateDialog();
-    } else {
-      if (this.wasCollided) {
-        this.onUncollide();
-        this.wasCollided = false;
-      }
+      this.startCollide();
+    } else if (!this.isCollided && this.wasCollided) {
+      this.wasCollided = false;
+      this.stopCollide();
     }
-
     this.isCollided = false;
   }
 }
