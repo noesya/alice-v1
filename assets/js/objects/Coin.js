@@ -19,5 +19,16 @@ export default class Coin extends Thing {
     this.type = "coins";
     this.data = data;
     this.html = data.html;
+    this.canCollide = true;
+    this.collideTimeoutDuration = 5000;
+    this.isCollided = true;
+  }
+
+  onCollide() {
+    this.isActive = false;
+
+    // Ajouter la pièce de monnaie à un emplacement en haut à gauche de l'écran
+    const coinContainer = document.getElementById('coin-container');
+    coinContainer.innerHTML = `<img src="${Definitions.src}" alt="Coin">`;
   }
 }

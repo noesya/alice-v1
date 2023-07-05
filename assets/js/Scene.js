@@ -58,6 +58,14 @@ export default class Scene {
         // this.hero.onCollide();
       }
     });
+    this.coins.forEach((coin) => {
+      if (coin.collides(this.hero)) {
+        coin.onCollide();
+  
+        // Supprimer la pièce de monnaie du tableau si nécessaire
+        this.coins = this.coins.filter((coin) => coin.isActive);
+      }
+    });
   }
   update() {
     this.map.update();
