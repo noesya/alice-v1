@@ -16,6 +16,7 @@ export default class Scene {
     this.trolls = [];
     this.definitions = [];
     this.elementsToUpdate = [];
+    this.coins = [];
     this.setup();
   }
   setup() {
