@@ -26,5 +26,6 @@ export default class Coin extends Thing {
 
   onCollide() {
     this.isActive = false;
+    console.log('La pièce de monnaie a été collectée !');
   }
 }
