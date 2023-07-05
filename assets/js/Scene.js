@@ -34,7 +34,7 @@ export default class Scene {
     });
     this.addTrolls();
 
-    this.elements = [...this.cities, ...this.trolls, ...this.definitions, this.hero,]
+    this.elements = [...this.cities, ...this.trolls, ...this.definitions, ...this.coins, this.hero,]
   }
   addTrolls() {
     let i = 0;
