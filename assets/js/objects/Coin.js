@@ -26,9 +26,5 @@ export default class Coin extends Thing {
 
   onCollide() {
     this.isActive = false;
-
-    // Ajouter la pièce de monnaie à un emplacement en haut à gauche de l'écran
-    const coinContainer = document.getElementById('coin-container');
-    coinContainer.innerHTML = `<img src="${Definitions.src}" alt="Coin">`;
   }
 }
