@@ -78,7 +78,7 @@ export default class Troll extends Character {
     // `);
 
     this.speak(`
-      <p>“${slang}”</p>
+      <p>${slang}</p>
     `);
 
     setTimeout(() => this.stopSpeaking(), this.slangMilliseconds);

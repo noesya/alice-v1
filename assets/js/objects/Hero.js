@@ -27,7 +27,7 @@ export default class Hero extends Character {
       }
     });
     this.type = "hero";
-    this.speed = 10;
+    this.speed = 6;
     this.controls = new Controls();
     this.direction = 1;
     this.collideTimeoutDuration = 1000;
