@@ -30,7 +30,7 @@ export default class Scene {
         this.cities.push(new City(city));
     });
     DEFINITIONS.forEach(definition => {
-        this.coins.push(new Coin(definition));
+        this.definitions.push(new Coin(definition));
     });
     this.addTrolls();
 
@@ -58,13 +58,12 @@ export default class Scene {
         // this.hero.onCollide();
       }
     });
-
-  this.coins.forEach((coin) => {
-    if (coin.collides(this.hero)) {
-      coin.onCollide();
+    this.definitions.forEach((coin) => {
+      if (coin.collides(this.hero)) {
+        coin.onCollide();
+        this.coins = this.coins.filter((c) => c !== coin); 
       }
     });
-    this.coins = this.coins.filter((coin) => coin.isActive);
   }
   update() {
     this.map.update();

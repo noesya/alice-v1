@@ -25,7 +25,7 @@ export default class Coin extends Thing {
   }
 
   onCollide() {
-    this.isCollided = true;
+    this.isActive = false;
     console.log('pop');
   }
 }
