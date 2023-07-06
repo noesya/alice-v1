@@ -16,7 +16,7 @@ export default class Coin extends Thing {
 
     super(data);
 
-    this.type = "coins";
+    this.type = "coin";
     this.data = data;
     this.html = data.html;
     this.canCollide = true;
@@ -25,7 +25,7 @@ export default class Coin extends Thing {
   }
 
   onCollide() {
-    this.isActive = false;
-    console.log('La pièce de monnaie a été collectée !');
+    this.isCollided = true;
+    console.log('pop');
   }
 }

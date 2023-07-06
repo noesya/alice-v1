@@ -58,6 +58,12 @@ export default class Scene {
         // this.hero.onCollide();
       }
     });
+
+  this.coins.forEach((coin) => {
+    if (coin.collides(this.hero)) {
+      coin.onCollide();
+      }
+    });
     this.coins = this.coins.filter((coin) => coin.isActive);
   }
   update() {
