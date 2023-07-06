@@ -1,4 +1,5 @@
 import Thing from "./Thing";
+import { popinCoin } from "./Popin";
 import { game } from "js/Game";
 
 export default class Coin extends Thing {
@@ -27,7 +28,7 @@ export default class Coin extends Thing {
 
   onCollide() {
     this.active = false;
-    console.log('pop');
+    popinCoin.show(this.data)
   }
 
   update() {
