@@ -78,7 +78,6 @@
     &::before
       content: "“"
       margin-bottom: px2rem(-45)
-  .image
 
   @include media-breakpoint-down($md)
     display: none
@@ -95,6 +94,34 @@
     transform: translateX(100%)
     &.active
       transform: translateX(0)
+
+#pop-in-coin
+  position: absolute
+  display: none
+  color: white
+  background-color: #000000
+  padding: 50px
+  inset: 30px
+  max-width: 500px
+  margin: 0 auto
+  z-index: 5
+  overflow-y: scroll
+  &.active
+    display: block
+  .close 
+    cursor: pointer
+    position: absolute
+    color: white
+    top: 20px
+    right: 20px
+    width: 40px
+    height: 40px
+    border: 1px solid white
+    border-radius: 50%
+    transition: all 200ms
+    font-size: px2rem(30)
+    text-decoration: none
+    text-align: center
 
 .game-controls
   position: fixed
@@ -120,7 +147,7 @@
   // button:active
   //   transform: translateY(5px)
   //   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25)
-        
+  
 
 .game-dialog
   background: black
@@ -170,14 +197,14 @@
     &::before
       content: 'Visiter ↓'
 
-body.is-popin-opened, body.is-popin-closing
+body.pop-in-city--opened, 
+body.is-popin-closing
   .game-dialog
-    // display: none !important
     transition-duration: 0.1s
     transition-timing-function: ease-in-out
     opacity: 0
 
-body.is-popin-opened
+body.pop-in-city--opened
   @include media-breakpoint-up($md)
     #game
       canvas

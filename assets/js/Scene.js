@@ -1,33 +1,55 @@
 import {CITIES} from './data/cities';
 import {TROLLS} from './data/trolls';
 import {WORLD} from './data/world';
+import {DEFINITIONS} from './data/definitions';
 import Hero from './objects/Hero';
 import City from './objects/City';
 import Map from './objects/Map';
 import Troll from './objects/Troll';
 import Sea from './objects/Ocean';
+import Coin from './objects/Coin';
+import CoinDisplay from './objects/CoinDisplay';
 
 export default class Scene {
   constructor(game) {
     this.game = game;
     this.cities = [];
     this.trolls = [];
+    this.definitions = [];
     this.elementsToUpdate = [];
+    this.coins = [];
+    this.coinDisplay = new CoinDisplay();
     this.setup();
   }
   setup() {
     this.map = new Map();
-    // this.sea = new Sea();
-    this.hero = new Hero({
-      x: WORLD.width / 4, // Pas compris pour "/4"
-      y: WORLD.height / 4
+    this.addCoins();
+    this.addAlice();
+    this.addCities();
+    this.addTrolls();
+    this.elements = [
+        ...this.cities, 
+        ...this.trolls, 
+        ...this.definitions, 
+        ...this.coins, 
+        this.hero
+    ]
+  }
+  addCoins() {
+    DEFINITIONS.forEach(definition => {
+        this.definitions.push(new Coin(definition));
     });
+  }
+  addAlice() {
+    this.hero = new Hero({
+        x: WORLD.width / 4, // Pas compris pour "/4"
+        y: WORLD.height / 4
+      });  
+  }
+  addCities() {
     CITIES.forEach(city => {
         this.cities.push(new City(city));
     });
-    this.addTrolls();
-
-    this.elements = [...this.cities, ...this.trolls, this.hero]
   }
   addTrolls() {
     let i = 0;
@@ -50,13 +72,19 @@ export default class Scene {
         city.onCollide();
       }
     });
+    this.definitions.forEach((coin) => {
+      if (coin.collides(this.hero) && coin.active) {
+        coin.onCollide();
+        this.coinDisplay.addCoin(coin);
+        this.coins = this.coins.filter((c) => c !== coin);
+      }
+    });
   }
   update() {
     this.map.update();
-    // this.sea.update();
     this.elements.sort((a, b) => (a.y + a.depthOffset) - (b.y + b.depthOffset))
     this.elements.forEach(element => element.update());
-
+    this.coinDisplay.draw();
     this.checkCollision();
   }
 }
