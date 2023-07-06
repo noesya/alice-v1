@@ -8,6 +8,7 @@ import Map from './objects/Map';
 import Troll from './objects/Troll';
 import Sea from './objects/Ocean';
 import Coin from './objects/Coin';
+import CoinDisplay from './objects/CoinDisplay';
 
 export default class Scene {
   constructor(game) {
@@ -17,6 +18,7 @@ export default class Scene {
     this.definitions = [];
     this.elementsToUpdate = [];
     this.coins = [];
+    this.coinDisplay = new CoinDisplay();
     this.setup();
   }
   setup() {
@@ -59,9 +61,10 @@ export default class Scene {
       }
     });
     this.definitions.forEach((coin) => {
-      if (coin.collides(this.hero)) {
+      if (coin.collides(this.hero) && coin.isActive) {
         coin.onCollide();
-        this.coins = this.coins.filter((c) => c !== coin); 
+        this.coinDisplay.addCoin(coin);
+        this.coins = this.coins.filter((c) => c !== coin);
       }
     });
   }
@@ -70,6 +73,7 @@ export default class Scene {
     // this.sea.update();
     this.elements.sort((a, b) => (a.y + a.depthOffset) - (b.y + b.depthOffset))
     this.elements.forEach(element => element.update());
+    this.coinDisplay.draw();
 
     this.checkCollision();
   }

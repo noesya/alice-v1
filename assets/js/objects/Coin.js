@@ -16,12 +16,13 @@ export default class Coin extends Thing {
 
     super(data);
 
-    this.type = "coin";
+    this.type = "coins";
     this.data = data;
     this.html = data.html;
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
-    this.isCollided = true;
+    // this.isCollided = true;
+    this.isActive = true; 
   }
 
   onCollide() {
