@@ -39,7 +39,7 @@ export const TROLLS = {
         'Restez pauvres bandes de fils de putes',
         'Vas-y régule moi ça ma gourmande',
         'Ferme ta gueule',
-        'Un coup de règle sur les doigts !!!',
+        'Un coup de règle sur les doigts !!!',
         'CONNASSE!',
         'Nike bien ta raSSe !',
         'une grosse merde qui servirait même pas d‘otage a l armée russe..',
