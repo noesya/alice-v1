@@ -30,8 +30,8 @@ export default class Coin extends Thing {
     console.log('pop');
   }
 
-//   update() {
-//     if (!this.active) return;
-//     super.update()
-//   }
+  update() {
+    if (!this.active) return;
+    super.update()
+  }
 }
