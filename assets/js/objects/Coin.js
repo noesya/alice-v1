@@ -21,12 +21,17 @@ export default class Coin extends Thing {
     this.html = data.html;
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
-    // this.isCollided = true;
-    this.isActive = true; 
+    this.active = true; 
+    this.depthOffset = -200;
   }
 
   onCollide() {
-    this.isActive = false;
+    this.active = false;
     console.log('pop');
   }
+
+//   update() {
+//     if (!this.active) return;
+//     super.update()
+//   }
 }
