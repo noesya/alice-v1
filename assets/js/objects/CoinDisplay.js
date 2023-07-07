@@ -3,9 +3,13 @@ import { game } from "js/Game";
 
 export default class CoinDisplay {
   constructor() {
+    this.totalCoins = 22; 
+    this.collectedCoins = 0; 
     this.coins = [];
     this.coinImage = new Image();
     this.coinImage.src = "/assets/images/coin/flat-coin.png";
+    this.emptyCoinImage = new Image();
+    this.emptyCoinImage.src = "/assets/images/coin/empty_coin.png";
     this.coinImageWidth = 22;
     this.coinImageHeight = 22;
     this.padding = 4;
