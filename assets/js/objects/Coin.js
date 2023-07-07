@@ -5,13 +5,13 @@ import { game } from "js/Game";
 export default class Coin extends Thing {
   constructor(data) {
     data.hitbox = {
-      width: 70,
-      height: 70,
+      width: 35,
+      height: 35,
       x: 50,
       y: 25
     }
 
-    const scale = 0.5;
+    const scale = 0.25;
     data.width = data.srcWidth * scale;
     data.height = data.srcHeight * scale;
 
