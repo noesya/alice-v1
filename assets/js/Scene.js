@@ -23,20 +23,33 @@ export default class Scene {
   }
   setup() {
     this.map = new Map();
-    // this.sea = new Sea();
-    this.hero = new Hero({
-      x: WORLD.width / 4, // Pas compris pour "/4"
-      y: WORLD.height / 4
-    });
-    CITIES.forEach(city => {
-        this.cities.push(new City(city));
-    });
+    this.addCoins();
+    this.addAlice();
+    this.addCities();
+    this.addTrolls();
+    this.elements = [
+        ...this.cities, 
+        ...this.trolls, 
+        ...this.definitions, 
+        ...this.coins, 
+        this.hero
+    ]
+  }
+  addCoins() {
     DEFINITIONS.forEach(definition => {
         this.definitions.push(new Coin(definition));
     });
-    this.addTrolls();
-
-    this.elements = [...this.cities, ...this.trolls, ...this.definitions, ...this.coins, this.hero,]
+  }
+  addAlice() {
+    this.hero = new Hero({
+        x: WORLD.width / 4, // Pas compris pour "/4"
+        y: WORLD.height / 4
+      });  
+  }
+  addCities() {
+    CITIES.forEach(city => {
+        this.cities.push(new City(city));
+    });
   }
   addTrolls() {
     let i = 0;
@@ -57,11 +70,10 @@ export default class Scene {
     this.cities.forEach(city => {
       if (city.collides(this.hero)) {
         city.onCollide();
-        // this.hero.onCollide();
       }
     });
     this.definitions.forEach((coin) => {
-      if (coin.collides(this.hero) && coin.isActive) {
+      if (coin.collides(this.hero) && coin.active) {
         coin.onCollide();
         this.coinDisplay.addCoin(coin);
         this.coins = this.coins.filter((c) => c !== coin);
@@ -70,11 +82,9 @@ export default class Scene {
   }
   update() {
     this.map.update();
-    // this.sea.update();
     this.elements.sort((a, b) => (a.y + a.depthOffset) - (b.y + b.depthOffset))
     this.elements.forEach(element => element.update());
     this.coinDisplay.draw();
-
     this.checkCollision();
   }
 }

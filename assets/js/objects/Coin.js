@@ -1,4 +1,5 @@
 import Thing from "./Thing";
+import { popinCoin } from "./Popin";
 import { game } from "js/Game";
 
 export default class Coin extends Thing {
@@ -21,14 +22,17 @@ export default class Coin extends Thing {
     this.html = data.html;
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
-    this.isCollided = true;
-    this.isActive = true; 
-    this.isVisible = true; 
+    this.active = true; 
+    this.depthOffset = -200;
   }
 
   onCollide() {
-    this.isActive = false;
-    this.isVisible = false;
-    console.log('pop');
+    this.active = false;
+    popinCoin.show(this.data)
+  }
+
+  update() {
+    if (!this.active) return;
+    super.update()
   }
 }
