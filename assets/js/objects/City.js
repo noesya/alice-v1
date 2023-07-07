@@ -12,7 +12,7 @@ export default class City extends SpeakingThing {
       y: 25
     }
 
-    const scale = 0.5;
+    const scale = 0.35;
     data.width = data.srcWidth * scale;
     data.height = data.srcHeight * scale;
 
