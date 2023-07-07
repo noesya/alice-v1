@@ -3,8 +3,8 @@ import { game } from "js/Game";
 export default class CoinDisplay {
     constructor() {
       this.collectedCoins = [];
-      this.x = 10; // Position horizontale de l'affichage
-      this.y = 10; // Position verticale de l'affichage
+      this.x = 10; 
+      this.y = 10; 
     }
   
     addCoin(coin) {
