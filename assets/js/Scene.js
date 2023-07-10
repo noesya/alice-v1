@@ -42,9 +42,9 @@ export default class Scene {
   }
   addAlice() {
     this.hero = new Hero({
-        x: WORLD.width / 4, // Pas compris pour "/4"
-        y: WORLD.height / 4
-      });  
+      x: WORLD.width / 4, // Pas compris pour "/4"
+      y: WORLD.height / 4
+    });
   }
   addCities() {
     CITIES.forEach(city => {

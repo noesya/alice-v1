@@ -6,7 +6,7 @@ export const DEFINITIONS = [
         y: 800,
         srcWidth: 160,
         srcHeight: 160,
-        html: '<p>Première monnaie appuyée sur une blockchain, inventée par Satoshi Nakamoto. Gouffre énergétique. Objet de culte.</p>' 
+        html: '<p>Première monnaie appuyée sur une blockchain, inventée par Satoshi Nakamoto. Gouffre énergétique. Objet de culte.</p>'
     },
     {
         name: 'Blockchain',
