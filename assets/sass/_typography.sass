@@ -1,0 +1,36 @@
+body
+    font-family: "Calvino"
+    color: black
+
+h1, .h1
+    font-size: px2rem(50)
+    font-weight: bold
+    text-align: center
+    color: $orange
+    @include media-breakpoint-up($md)
+        font-size: px2rem(80)
+
+h2, .h2
+    font-size: px2rem(40)
+    font-style: italic
+    line-height: 1.2
+    @include media-breakpoint-up($md)
+        font-size: px2rem(42)
+
+p
+    font-size: px2rem(22)
+    line-height: 1.6
+    &.credits
+        font-size: px2rem(18)
+
+a
+    color: inherit
+    text-decoration-thickness: 1px
+    text-underline-offset: 3px
+    text-decoration-line: underline
+
+.button
+    font-size: px2rem(26)
+    text-decoration: none
+    padding: px2rem(12) px2rem(32)
+    background: $orange

@@ -28,4 +28,4 @@ class Popin {
 }
 
 export const popinCity = new Popin('pop-in-city');
-export const popinCoin = new Popin('pop-in-coin');
+// export const popinCoin = new Popin('pop-in-coin');
