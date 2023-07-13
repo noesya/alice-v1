@@ -42,8 +42,8 @@ export class Game {
     requestAnimationFrame(this.loop.bind(this));
     this.scene.update();
 
-    this.camera.x = -this.scene.hero.x + this.width / 2;
-    this.camera.y = -this.scene.hero.y + this.height / 2;
+    this.camera.x = -this.scene.hero.x - this.scene.hero.width / 2 + this.width / 2;
+    this.camera.y = -this.scene.hero.y - this.scene.hero.height / 2 + this.height / 2;
   }
   drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh) {
     this.ctx.drawImage(image, sx, sy, sw, sh, dx + this.camera.x, dy + this.camera.y, dw, dh);
