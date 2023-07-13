@@ -42,7 +42,7 @@ export const CITIES = [
         srcHeight: 459,
     },
     {
-        id: 'Le dôme du tonnerre',
+        id: 'le-dome-du-tonnerre',
         src: '/assets/images/cities/dome-tonnerre.png',
         x: 2050,
         y: 200,
@@ -50,15 +50,12 @@ export const CITIES = [
         srcHeight: 387,
     },
     {
-        id: 'kryptogarten',
-        name: 'Self-made city',
-        baseline: 'Vous ne laissez pas les gens libres',
+        id: 'self-made-city',
         src: '/assets/images/cities/self-made-city.png',
         x: 350,
         y: 300,
         srcWidth: 381,
         srcHeight: 423,
-        html: "<p>À Self-made city, on combat pour la liberté. La liberté fondamentale d’acheter des crypto-actifs qui s’écroulent. La liberté essentielle d’acquérir des NFTs de singes. La liberté absolue d’adorer les cryptos. La liberté inaliénable de refuser la régulation légale. La Liberté, la grande, avec un L majuscule, celle qui a permis la merveilleuse civilisation humaniste et durable dans laquelle nous vivons.</p><blockquote>Cessez de nous protéger, de faire notre bien malgré nous</blockquote><p>Car il faut savoir que cette liberté est menacée ! Des individus au service de mystérieuses puissances essaient de promulguer des lois, qui obligeraient les crypto-monnaies à se comporter comme les autres actifs financiers. C’est un scandale ! Une hérésie ! Empoignez vite vos crypto-lasers, il faut faire preuve de courage, et se battre. La Liberté en dépend.</p>"
     },
     {
         id: 'kryptogarten',
