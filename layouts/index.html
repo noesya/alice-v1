@@ -19,7 +19,7 @@
     <section id="home" class="screen">
       <img src="/assets/images/alice.png" alt="Alice">
       <h1>Alice au pays des cryptos</h1>
-      <p class="subtitle">Une plongée sociologique, ludique et gratuite</p>
+      <p class="h2">Une plongée sociologique, ludique et gratuite</p>
       <p>
         Le monde des cryptos & des NFTs peut être à la fois dense et superficiel, transparent et opaque, technique et mystique. 
         Afin de guider les visiteurs et les curieux, 
@@ -28,7 +28,6 @@
         Attention, malgré sa grande mignonitude, cette petite expérience n'est pas du tout pour les enfants (#cookiejar).
       </p>
       <a href="#game" class="button">Jouer</a>
-
       <p class="credits">
         Cette expérience interactive a été conçue par Etienne et Arnaud.
         La direction artistique et la production graphique sont l'œuvre d'Etienne, avec l'aide de Perrine Joly.
@@ -39,19 +38,10 @@
       </p>
     </section>
     <div class="screen game" id="game">
-
-      <div id="pop-in-city">
-        <img class="image" alt="">
-        <p class="subtitle"></p>
-        <p class="baseline"></p>
-        <div class="data"></div>
-        <a class="close">&times;</a>
-      </div>
-
       <div class="definitions">
         <ul>
           {{ range site.Data.definitions }}
-            <li class="definition popin">
+            <li class="popin" id="{{ urlize .title }}">
               <article class="definition">
                 <h2>{{ .title }}</h2>
                 {{ safeHTML .content  }}
@@ -61,16 +51,26 @@
           {{ end }}
         </ul>
       </div>
+    
+      <div class="cities">
+        <ul>
+          {{ range (where (where site.Pages "Section" "cities") "Kind" "page") }}
+            <li class="popin popin--offcanvas" id="{{ urlize .Title }}">
+              <div class="city">
+                <img src="{{ .Params.image }}" alt="Illustration de la ville de {{ .Title }}">
+                <div class="content">
+                  <h2 class="h1">{{ .Title }}</h2>
+                  {{ safeHTML .Content }}
+                </div>
+                <a class="close">&times;</a>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
 
       <div class="game-ui">
-        <div class="coins">
-          <div class="coin">
-            <p>Crypto bro</p>
-          </div>
-          <div class="coin">
-            <p>Crypto monnaie</p>
-          </div>
-        </div>
+        <div class="coins"></div>
         <div class="controls">
           <button data-action="left"><img class="arrow" src=/assets/images/arrows/gauche.svg></button>
           <button data-action="up"><img class="arrow" src=/assets/images/arrows/haut.svg></button>

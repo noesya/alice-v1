@@ -1,3 +1,4 @@
+import UI from "js/UI";
 import Thing from "./Thing";
 // import { popinCoin } from "./Popin";
 import { game } from "js/Game";
@@ -19,7 +20,8 @@ export default class Coin extends Thing {
 
   onCollide() {
     this.active = false;
-
+    UI.open(this.data.id);
+    UI.collectCoin(this.data.id);
   }
 
   update() {

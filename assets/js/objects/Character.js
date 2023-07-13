@@ -8,9 +8,7 @@ export default class Character extends Sprite {
     this.type = "character";
     this.canCollide = true;
     this.collideTimeoutDuration = 5000;
-    this.depthOffset = -40;
-
-    //TEST
+    this.depthOffset = -10;
   }
   move(x, y) {
     const { area } = WORLD

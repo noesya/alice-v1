@@ -2,18 +2,30 @@ import { UIPopin } from "./ui/UIPopin";
 
 class UI {
   constructor() {
-    this.definitions = document.querySelectorAll('.definition');
-    this.definitions.forEach(element => {
-      new UIPopin(element)
+    this.popins = [];
+  }
+  setup() {
+    document.querySelectorAll('.popin').forEach(element => {
+      this.popins[element.id] = new UIPopin(element);
     });
-    console.log(this.definitions)
+    this.coinsContainer = document.querySelector('.coins');
   }
-  listen() {
-
+  closeAll() {
+    for (let key in this.popins) {
+      this.popins[key].close();
+    }
   }
-  open(index) {
-    const definition = this.definitions.querySelectorAll('.definition')[index];
-    
+  open(id) {
+    this.closeAll();
+    this.popins[id].open();
+  }
+  collectCoin(id) {
+    const coin = document.createElement('div'),
+      title = this.popins[id].element.querySelector('h2').innerText;
+    coin.classList.add('coin')
+    coin.innerHTML = `<p>${title}</p>`;
+    this.coinsContainer.appendChild(coin);
+    coin.addEventListener('click', this.open.bind(this, id));
   }
 }
 

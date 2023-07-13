@@ -38,12 +38,12 @@
 @mixin popin
     display: none
     position: absolute
-    background-color: black
-    padding: 50px
     inset: 30px
     max-width: 500px
     margin: 0 auto
-    z-index: 5
-    overflow-y: scroll
+    justify-content: center
+    flex-direction: column
+    overflow-y: auto
+    z-index: 10
     &.is-opened
-        display: block
+        display: flex

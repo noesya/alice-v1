@@ -1,29 +1,36 @@
 export const COINS = [
     { 
+        id: 'bitcoin',
         x: 300,
         y: 800
     },
     {
+        id: 'blockchain',
         x: 950,
         y: 500
     },
     {
+        id: 'carte-graphique',
         x: 1440,
         y: 660
     },
     {
+        id: 'crypto-bro',
         x: 750,
         y: 800
     },
     {
+        id: 'crypto-monnaie',
         x: 2000,
         y: 500
     },
     {
+        id: 'crypto-troll',
         x: 250,
         y: 250
     },
     {
+        id: 'dao-decentralized-autonomous-organization',
         x: 1950,
         y: 300
     },
