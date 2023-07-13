@@ -10,7 +10,8 @@ export const CITIES = [
         srcHeight: 389,
     },
     {
-        id: 'crypto-university',
+        id: 'kryptogarten',
+        name: 'Crypto-university',
         src: '/assets/images/cities/crypto-university.png',
         x: 1440,
         y: 460,
@@ -18,7 +19,8 @@ export const CITIES = [
         srcHeight: 349,
     },
     {
-        id: 'la-mine-de-blocs',
+        id: 'kryptogarten',
+        name: 'La mine de blocs',
         src: '/assets/images/cities/mine-de-bloc.png',
         x: 1300,
         y: 150,
@@ -26,7 +28,8 @@ export const CITIES = [
         srcHeight: 416,
     },
     {
-        id: 'eglise-de-la-sainte-crypto',
+        id: 'kryptogarten',
+        name: 'Eglise de la sainte crypto',
         src: '/assets/images/cities/eglise-sainte-crypto.png',
         x: 500,
         y: 630,
