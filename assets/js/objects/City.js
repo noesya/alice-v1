@@ -1,7 +1,5 @@
-import Thing from "./Thing";
-import { popinCity } from "./Popin";
-import { game } from "js/Game";
 import SpeakingThing from "./SpeakingThing";
+import UI from "js/UI";
 
 export default class City extends SpeakingThing {
   constructor(data) {
@@ -35,11 +33,11 @@ export default class City extends SpeakingThing {
   }
 
   startCollide() {
-    popinCity.show(this.data);  
+    UI.open(this.data.id); 
   }
 
   stopCollide() {
-    popinCity.hide();
+    UI.closeAll();
   }
 
   update() {

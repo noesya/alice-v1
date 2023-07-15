@@ -1,7 +1,5 @@
 body
-    background: #B5C9C9
-    color: black
-    font-family: "Calvino"
+    background: $blue-sea
 
 .screen
     position: relative
@@ -9,55 +7,42 @@ body
     &:not(:target)
         display: none
 
-h1
-    margin-top: px2rem(20)
-    font-size: px2rem(80)
-    font-weight: bold
-    text-align: center
-    color: #FF4E07
-    font-family: "Calvino", serif
-    @media (max-width : 600px)
-        font-size: px2rem(50)
-
-p
-    font-size: px2rem(22)
-    line-height: 160%
-    font-family: "Calvino", serif
-    max-width: 660px
-    margin: 60px auto
-    font-weight: normal
-    &.credits
-        font-size: px2rem(18)
-
-.subtitle
-    font-size: px2rem(42)
-    font-style: italic
-    font-family: "Calvino", serif
-    max-width: none
-    margin: 30px 0 0 0
-    line-height: 120%
-    @media (max-width : 600px)
-        font-size: px2rem(40)
-
-.button
-    font-family: "Calvino", serif
-    font-size: px2rem(26)
-    text-decoration: none
-    padding: 12px
-    padding-left: 32px
-    padding-right: 32px
-    background: #FF4E07
-    color: black
-
-a
-    color: #000
-    text-decoration-thickness: 1px
-    text-underline-offset: 3px
-    text-decoration-line: underline
-
 img
     display: block
     max-width: 100%
 
+.close 
+    cursor: pointer
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 40px
+    height: 40px
+    border: 1px solid black
+    border-radius: 50%
+    transition: all 200ms
+    font-size: px2rem(30)
+    text-decoration: none
+    text-align: center
 
-        
+.popin
+    @include popin
+    &--offcanvas
+        background: white
+        &.is-opened
+            display: block
+        @include media-breakpoint-down($md)
+            display: none
+            &.is-opened
+                display: block
+        @include media-breakpoint-up($md)
+            display: block
+            max-width: 600px
+            width: 60%
+            top: 0
+            bottom: 0
+            left: auto
+            right: 0
+            transform: translateX(100%)
+            &.is-opened
+                transform: translateX(0)

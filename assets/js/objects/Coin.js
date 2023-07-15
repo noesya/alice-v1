@@ -1,34 +1,27 @@
+import UI from "js/UI";
 import Thing from "./Thing";
-import { popinCoin } from "./Popin";
+// import { popinCoin } from "./Popin";
 import { game } from "js/Game";
 
 export default class Coin extends Thing {
   constructor(data) {
-    data.hitbox = {
-      width: 35,
-      height: 35,
-      x: 50,
-      y: 25
-    }
-
-    const scale = 0.25;
-    data.width = data.srcWidth * scale;
-    data.height = data.srcHeight * scale;
+    data.src = "/assets/images/coin/coin.png";
+    data.srcHeight = data.srcWidth = 160;
+    data.width = 40;
+    data.height = 40;
 
     super(data);
 
-    this.type = "coins";
+    this.type = "coin";
     this.data = data;
-    this.html = data.html;
     this.canCollide = true;
-    this.collideTimeoutDuration = 5000;
     this.active = true; 
-    this.depthOffset = -200;
   }
 
   onCollide() {
     this.active = false;
-    popinCoin.show(this.data)
+    UI.open(this.data.id);
+    UI.collectCoin(this.data.id);
   }
 
   update() {
