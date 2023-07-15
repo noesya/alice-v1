@@ -40,13 +40,13 @@
 - title : POA (Proof of Authority)
   content: >-
     <p>Un système dans lequel on centralise la décentralisation. Oui, c’est un contresens.</p>
-- title : POH (Proof of History)
+- title : POH (Proof of History)
   content: >-
     <p>Un genre de POS qui s’appuie sur les dates de transaction, avec un truc incroyablement nouveau, le timestamp. Le timestamp est le nombre de secondes écoulées entre une certaine date et le 1er janvier 1970 à 00:00:00, appelé aussi epoch. On se croirait dans Matrix, mais c’est juste une date, rien de spécial. Ah si, c’est la sortie de l’album “Third”, de Soft Machine.</p>
-- title : POS (Proof of Stake)
+- title : POS (Proof of Stake)
   content: >-
     <p>Le mécanisme utilisé par Ethereum depuis 2022. Concrètement, dans le POW, tout le monde court. Dans le POS, on choisit d’abord les coureurs, ce qui limite la course pour rien. En revanche, ça crée un nouveau problème : sur quels critères choisit-on les coureurs ? Et bien on choisit les plus riches ! Révolutionnaire, comme idée !!!</p>
-- title : POW (Proof of Work)
+- title : POW (Proof of Work)
   content: >-
     <p>Le système utilisé par Bitcoin pour enregistrer les transactions. Ca ressemble beaucoup à la course des spermatozoïdes, sauf que ce serait des spermatozoïdes avec une carte graphique énorme qui consomme beaucoup d’électricité. Et à la fin, il y en a un qui devient le papa d’un joli bloc tout rose, et tous les autres vont dans les toilettes.</p>
 - title : Satoshi Nakamoto
@@ -60,4 +60,4 @@
     <p>Une crypto-monnaie stable. Garantie totale ! Aucun crash, rien, jamais. Bon, ça va, c’était une blague.</p>
 - title : Token
   content: >-
-    <p>Un jeton qui se donne des grands airs. C’est juste une chaîne de caractères un peu longue.</p>'
+    <p>Un jeton qui se donne des grands airs. C’est juste une chaîne de caractères un peu longue.</p>
